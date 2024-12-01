@@ -1,2 +1,2 @@
-# Proyecto Final Diseño Web con HTML5, CSS3 y JS
+# Proyecto Final | Diseño Web con HTML5, CSS3 y JS
 
