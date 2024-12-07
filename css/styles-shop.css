@@ -1,0 +1,56 @@
+/* Catálogo de productos */
+
+.Catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 1 columna en móvil, 3 en escritorio */
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.Catalog-item {
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.Catalog-item img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.Catalog-item img:hover {
+    transform: scale(1.05);
+    transition: transform 1s ease;
+}
+
+.Catalog-description {
+    margin-top: 1rem;
+}
+
+.Catalog-title {
+    font-family: var(--font-regular);
+    font-size: var(--font-size-lg);
+    color: var(--color-primary);
+}
+
+.Catalog-price {
+    font-family: var(--font-regular);
+    font-size: var(--font-size-md);
+    color: var(--color-primary);
+    margin: 0.5rem 0;
+}
+
+.Catalog-button {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-family: var(--font-regular);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.Catalog-button:hover {
+    background-color: var(--color-emphasis);
+}

@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables globales */
+
+:root {
+    /* colores */
+    --color-primary: #333333;
+    --color-secondary: #f0f0f0;
+    --color-text: #333333;
+    --bg-color: white;
+    --bg-color-dark: #333;
+    --color-emphasis: red;
+
+    /* tipografías */
+    --font-regular: helvetica;
+    --font-bold: helvetica;
+
+    /* Tamaños de fuente */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.9rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.6rem;
+    --font-size-xl: 2rem;
+
+    /* colores de texto */
+    --color-text-dark: #333;
+    --color-text-light: #f0f0f0;
+    --color-text-primary: #000;
+}
+
+
+
+
