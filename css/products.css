@@ -1,0 +1,116 @@
+
+.Product {
+    padding: 1rem;
+    margin-bottom: 50px;
+}
+
+/* Contenedor del producto */
+.Product-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* imágenes del producto */
+
+.Product-img {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.Product-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.Product-img-gallery {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.Product-img-gallery img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Información del producto */
+
+.Product-info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Product-title {
+    font-size: var(--font-size-lg);
+    font-family: var(--font-bold);
+    color: var(--color-primary);
+}
+
+.Product-description {
+    font-size: var(--font-size-md);
+    color: var(--color-text-dark);
+}
+
+.Product-price {
+    font-size: var(--font-size-md);
+    font-weight: bold;
+    color: var(--color-text-dark);
+}
+
+.Product-sizes label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.Product-size-select {
+    padding: 0.3rem;
+    font-size: var(--font-size-sm);
+    border-radius: 8px;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+/* Botón de añadir al carrito */
+
+.Product-button {
+    padding: 1rem;
+    font-size: var(--font-size-md);
+    background-color: var(--bg-color-dark);
+    color: var(--color-text-light);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+/* Responsive para desktop */
+
+@media (min-width: 768px) {
+    .Product-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        margin: 0 50px;
+    }
+
+    .Product-info {
+        justify-content: center;
+    }
+
+    .Product-title {
+        font-size: var(--font-size-xl);
+    }
+
+    .Product-price {
+        font-size: var(--font-size-lg);
+    }
+
+}

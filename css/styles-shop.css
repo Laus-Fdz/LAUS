@@ -54,3 +54,12 @@
 .Catalog-button:hover {
     background-color: var(--color-emphasis);
 }
+
+/* Responsive desktop */
+
+@media  (min-width: 768px) {
+    .Catalog-grid {
+        margin: 100px;
+        gap: 0.5rem;
+    }
+}

@@ -9,6 +9,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/controllers.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/products.css">
 
     <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
@@ -71,10 +72,17 @@
                 <p class="Product-price">20€</p>
 
                 <!-- Selección de formato/tamaño del print -->
-
+                <!-- Ayuda de ChatGPT -->
                 <div class="Product-sizes">
-
+                    <label for="size">Selecciona un tamaño</label>
+                    <select name="size" id="size" class="Product-size-select">
+                        <option value="A4">A4</option>
+                        <option value="A3">A3</option>
+                    </select>
                 </div>
+
+                <!-- Botón de añadir al carrito -->
+                 <button class="Product-button">Añadir al carrito</button>
 
               </div>
         </div>
