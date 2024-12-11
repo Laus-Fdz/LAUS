@@ -2,9 +2,11 @@
 
 .Catalog-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 1 columna en móvil, 3 en escritorio */
+    grid-template-columns: repeat(1, 1fr); /* 1 columna en móvil */
     gap: 1rem;
     padding: 2rem;
+    margin: 0 auto;
+    max-width: 1680px;
 }
 
 .Catalog-item {
@@ -12,7 +14,7 @@
     border-radius: 8px;
 }
 
-.Catalog-item img{
+.Catalog-item img {
     width: 100%;
     height: auto;
     border-radius: 8px;
@@ -56,10 +58,10 @@
 }
 
 /* Responsive desktop */
-
-@media  (min-width: 768px) {
-    .Catalog-grid {
-        margin: 100px;
-        gap: 0.5rem;
+@media (min-width: 768px) {
+    .Catalog-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en escritorio */
+        gap: 1rem; 
+        padding: 2rem; 
     }
 }

@@ -17,6 +17,10 @@
     border-bottom: 1px solid var(--color-secondary);
 }
 
+.Main {
+    flex: 1; /* Hace que el contenedor crezca para ocupar el contenido disponible */
+}
+
 /* Contenedor del menú de navegación */
 .Nav {
     display: flex;
@@ -26,11 +30,13 @@
 }
 
 /* Estilos del menú de navegación */
-.Nav-logo {
+.Nav-logo a {
+    text-decoration: none;
+    color: var(--color-primary);
+    text-decoration: none;
     text-transform: uppercase;
     font-family: var(--font-bold);
     font-size: var(--font-size-lg);
-    color: var(--color-primary);
 }
 
 /* Enlaces de navegación */
@@ -163,6 +169,7 @@
 /* Responsive para desktop */
 
 @media (min-width: 768px) {
+
 
     /* Ajusta la barra de navegación */
     .Nav {

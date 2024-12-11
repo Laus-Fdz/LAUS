@@ -21,10 +21,10 @@
 
     /* Tamaños de fuente */
     --font-size-xs: 0.75rem;
-    --font-size-sm: 0.9rem;
-    --font-size-md: 1rem;
-    --font-size-lg: 1.6rem;
-    --font-size-xl: 2rem;
+    --font-size-sm: 1rem;
+    --font-size-md: 1.5rem;
+    --font-size-lg: 2rem;
+    --font-size-xl: 2.5rem;
 
     /* colores de texto */
     --color-text-dark: #333;
