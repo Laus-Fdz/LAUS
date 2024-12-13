@@ -23,22 +23,26 @@
         <nav class="Nav">
             <a class="Nav-icon fab fa-instagram" href="https://www.instagram.com/itslauss/" target="_blank"></a>
 
-            <!-- <div class="Nav-logo">
-                <img class="Nav-logoImage" src="" alt="">
-            </div> -->
             <h1 class="Nav-logo">
                 <a href="./index.html">IT'S LAUS</a>
             </h1>
+
             <!-- Contenedor para el carrito y menu móvil -->
             <div class="Nav-shop" aria-label="Carrito">
-                <button class="Nav-icon fa-solid fa-cart-shopping"></button>
+                <button class="Nav-icon fa-solid fa-cart-shopping" aria-label="Carrito"></button>
 
-                <button class="Nav-menu fa-solid fa-bars">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                <!-- Botón para el menú móvil -->
+                 <div class="Nav-menuMobile">
+                    <button class="Nav-menu fa-solid fa-bars" aria-label="Abrir menú"></button>
+
+                    <!-- Menú móvil -->
+                    <ul class="Nav-menuLinks">
+                        <li><a href="./">Sobre mí</a></li>
+                        <li><a href="./prints.html">Prints</a></li>
+                        <li><a href="./">Contacto</a></li>
+                    </ul>
+                 </div>
+
             </div>
         </nav>
 
@@ -134,6 +138,8 @@
             <p class="Footer-credits">© 2024 All rights reserved to LAUS.</p>
         </div>
     </footer>
+
+    <script src="./js/javascript.js"></script>
 
 </body>
 

@@ -1,11 +1,13 @@
-/* Define el diseño general del body, para que sea flexible y ocupe toda la página */
+/* Definir el diseño general del body, para que sea flexible y ocupe toda la página */
 .Body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-/* Header */
+/*------------------------*/
+/*        Header          */
+/*------------------------*/
 
 /* Estilo del encabezado */
 .Header {
@@ -17,47 +19,42 @@
     border-bottom: 1px solid var(--color-secondary);
 }
 
-.Main {
-    flex: 1; /* Hace que el contenedor crezca para ocupar el contenido disponible */
-}
-
 /* Contenedor del menú de navegación */
 .Nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 /* Estilos del menú de navegación */
 .Nav-logo a {
     text-decoration: none;
     color: var(--color-primary);
-    text-decoration: none;
     text-transform: uppercase;
     font-family: var(--font-bold);
     font-size: var(--font-size-lg);
 }
 
-/* Enlaces de navegación */
-/* Oculta los enlaces de navegación en móvil */
+/* Enlaces de navegación - menu para desktop */
 
 .Nav-links {
-    display: none;
+    display: none; /* Oculta los enlaces de navegación en móvil */
+    background-color: var(--bg-color-light);
+    flex-direction: row;
+    width: 100%;
+    padding: 1rem;
+    z-index: 1;
+
     list-style: none;
-    margin: 0;
-    padding: 0;
     gap: 2rem;
-    text-align: center;
     font-family: var(--font-regular);
-    margin-top: 2rem;
     text-transform: uppercase;
 }
 
 /* Estilos de los enlaces del menú desktop */
 
 .Nav-links a {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md);
     padding: 0.5rem 1rem;
     display: inline-block;
     color: var(--color-primary);
@@ -76,33 +73,73 @@
 .Nav-shop {
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
+
+.Nav-menu {
+    gap: 4px;
+    border: none;
+    background-color: var(--bg-color-light);
+    cursor: pointer;
+}
+
+
+.Nav-menuLinks {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    transform: translateX(100%);
+    transition: transform 1s ease;
+    text-align: center;
+    justify-content: center;
+
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.Nav-menuLinks.active {
+    display: flex;
+    transform: translateX(0);
+    background-color: white;
+    opacity: 80%;
+    font-size: var(--font-size-lg);
+    list-style: none;
+
+}
+
+.Nav-menuLinks li a {
+    text-decoration: none;
+    color: var(--color-text-primary);
+    font-family: var(--font-regular);
+}
+
 
 /* Estios de los iconos (carrito y hamburguesa) */
 .Nav-icon {
-    font-size: 1.5rem;
-    /* tamaños del icono */
+    font-size: 2rem; /* tamaños del icono */
     color: var(--color-primary);
-    background: none;
-    /* eliminar el fondo */
-    border: none;
-    /* elimina el borde */
+    background: none; /* eliminar el fondo */
+    border: none;/* elimina el borde */
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
-
+    text-decoration: none;
 }
 
 .Nav-icon:hover {
     transform: scale(1.1);
 }
 
-.Nav-icon i {
-    font-size: 2rem;
-    color: var(--color-primary);
-}
 
 /* estilos propios del menú hamburguesa pensado para móvil */
 .Nav-menu {
@@ -120,7 +157,9 @@
 }
 
 
-/* Footer */
+/*------------------------*/
+/*        Footer          */
+/*------------------------*/
 
 /* Estilos del pie de página */
 .Footer {
@@ -166,7 +205,9 @@
     color: var(--color-text-light);
 }
 
-/* Responsive para desktop */
+/*-----------------------------*/
+/*    Responsive desktop       */
+/*-----------------------------*/
 
 @media (min-width: 768px) {
 
@@ -186,11 +227,9 @@
         gap: 1rem;
     }
 
-    .Nav-menu {
+    .Nav-menuMobile { 
         display: none;
-        /* Oculta el menú de móvil */
     }
-
 
     /* cambia la lista del footer a fila */
     .Footer-content {
