@@ -54,8 +54,8 @@
 /* Estilos de los enlaces del menú desktop */
 
 .Nav-links a {
-    font-size: var(--font-size-md);
-    padding: 0.5rem 1rem;
+    font-size: var(--font-size-sm);
+    padding: 1rem;
     display: inline-block;
     color: var(--color-primary);
     text-decoration: none;
@@ -211,6 +211,9 @@
 
 @media (min-width: 768px) {
 
+    .Header {
+        padding:  2rem 2rem 0 2rem;
+    }
 
     /* Ajusta la barra de navegación */
     .Nav {

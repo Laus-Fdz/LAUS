@@ -1,0 +1,92 @@
+/*  Sección de contacto */
+
+.Contact-container {
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Contact-title {
+    font-size: var(--font-size-lg);
+    margin-bottom: 1rem;
+    text-align: center;
+
+    font-family: var(--font-bold);
+    color: var(--color-text-dark);
+}
+
+.Contact-description {
+    font-size: var(--font-size-sm);
+    font-family: var(--font-regular);
+    text-align: center;
+}
+
+.Contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    margin-top: 1rem;
+}
+
+.Div-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Label {
+    margin-bottom: 0.5rem;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-dark);
+    font-family: var(--font-bold);
+}
+
+.Input {
+    margin-bottom: 0.5rem;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-dark);
+    font-family: var(--font-regular);
+
+    border-radius: 20px;
+    border: 1px solid var(--color-primary);
+    padding: 1rem;
+    
+}
+
+
+.Div-checkbox {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+}
+
+.Div-form-sumbit {
+    padding: 1rem;
+    background-color: var(--bg-color-dark);
+    color: var(--color-text-light);
+    border-radius: 20px;
+
+    font-size: var(--font-size-sm);
+    font-family: var(--font-bold);
+}
+
+.Div-form-sumbit:hover {
+    background-color: var(--bg-color-light);
+    color: var(--color-text-dark);
+}
+
+@media (min-width: 768px) {
+
+    .Contact {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Contact-container {
+        max-width: 1000px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+}

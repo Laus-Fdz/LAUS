@@ -4,8 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT'S LAUS | Contacto </title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/controllers.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/contact.css">
+    
+        <!-- Iconos -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    
+
 </head>
 <body>
+
+    <!-- Encabezado -->
+    <header class="Header">
+        <nav class="Nav">
+            <a class="Nav-icon fab fa-instagram" href="https://www.instagram.com/itslauss/" target="_blank"></a>
+
+            <h1 class="Nav-logo">
+                <a href="./index.html">IT'S LAUS</a>
+            </h1>
+
+            <!-- Contenedor para el carrito y menu móvil -->
+            <div class="Nav-shop" aria-label="Carrito">
+                <button class="Nav-icon fa-solid fa-cart-shopping" aria-label="Carrito"></button>
+
+                <!-- Botón para el menú móvil -->
+                 <div class="Nav-menuMobile">
+                    <button class="Nav-menu fa-solid fa-bars" aria-label="Abrir menú"></button>
+
+                    <!-- Menú móvil -->
+                    <ul class="Nav-menuLinks">
+                        <li><a href="./sobre-mi.html">Sobre mí</a></li>
+                        <li><a href="./prints.html">Prints</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                 </div>
+
+            </div>
+        </nav>
+
+        <!-- Enlaces de navegación para desktop -->
+        <ul class="Nav-links">
+            <li><a href="./sobre-mi.html">Sobre mi</a></li>
+            <li><a href="./prints.html">Prints</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+
+    </header>
+
+        <main class="Contact">
+
+            <!-- Sección de contacto -->
+
+            <section class="Contact-container">
+                <h2 class="Contact-title">¿Hablamos?</h2>
+                <p class="Contact-description">¿Tienes alguna duda? ¿Algún encargo personalizado? Rellena el formulario y hablaremos lo antes posible.</p>
+
+                <form class="Contact-form" action="">
+                    <!-- Campo del nombre -->
+                     <div class="Div-form">
+                        <label class="Label" for="name">Nombre</label>
+                        <input class="Input" type="text" id="name" name="name" placeholder="Tu nombre" required>
+                     </div>
+
+                     <!-- Campo de apellidos -->
+                      <div class="Div-form">
+                        <label class="Label" for="surname">Apellido</label>
+                        <input class="Input" type="text" id="surname" name="surname" placeholder="Tus apellidos">
+                      </div>
+
+                      <!-- Campo de email -->
+                       <div class="Div-form">
+                        <label class="Label" for="email">Correo Electrónico</label>
+                        <input class="Input" type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                       </div>
+
+                       <!-- Campo de teléfono -->
+                        <div class="Div-form">
+                            <label class="Label" for="phone">Teléfono</label>
+                            <input class="Input" type="tel" id="phone" name="phone" placeholder="Tu número de teléfono">
+                        </div>
+
+                        <!-- Campo de mensaje -->
+                         <div class="Div-form">
+                            <label class="Label" for="message">Mensaje</label>
+                            <textarea class="Input" type="text" name="message" rows="4" placeholder="Escribe aquí tu mensaje" required></textarea>
+                         </div>
+
+                         <!-- Checkbox de política de privacidad -->
+                          <div class="Div-form Div-checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label class="Label" for="privacy">He leído y acepto la <a href="./" target="_blank">política de privacidad</a></label>
+                          </div>
+
+                          <!-- Botón de enviar -->
+                           <div class="Div-form">
+                            <button class="Div-form-sumbit" type="submit">Enviar</button>
+                           </div>
+                </form>
+            </section>
+
+        </main>
+
+
+
+    <!-- Footer -->
+    <footer class="Footer">
+        <div class="Footer-content">
+            <ul class="Footer-list">
+                <li class="Footer-listItem"><a href="./" class="Footer-link">Aviso Legal</a></li>
+                <li class="Footer-listItem"><a href="./" class="Footer-link">Política de Privacidad</a></li>
+                <li class="Footer-listItem"><a href="./" class="Footer-link">Política de Cookies</a></li>
+            </ul>
+            <p class="Footer-credits">© 2024 All rights reserved to LAUS.</p>
+        </div>
+    </footer>
+
+        <script src="./js/javascript.js"></script>
     
 </body>
 </html>
