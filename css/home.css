@@ -17,6 +17,14 @@
     border-radius: 8px;
 }
 
+.u-izq {
+    left: 10px;
+}
+
+.u-der {
+    right: 10px;
+}
+
 
 /* Contenedor del carrusel */
 /* .Gallery-slider {
