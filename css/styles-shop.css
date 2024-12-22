@@ -51,12 +51,15 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
     border-radius: 4px;
+    font-weight: bold;
+
+    transition: background-color 0.3s ease;
 }
 
 .Catalog-button:hover {
     background-color: var(--color-emphasis);
     color: var(--color-text-dark);
-    font-weight: bold;
+    
 }
 
 /* Responsive desktop */

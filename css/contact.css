@@ -70,11 +70,17 @@
 
     font-size: var(--font-size-sm);
     font-family: var(--font-bold);
+    font-weight: bold;
+    border: none;
+
+    transition: background-color 0.3s ease;
 }
 
 .Div-form-sumbit:hover {
-    background-color: var(--color-enphasis);
+    background-color: var(--color-emphasis);
     color: var(--color-text-dark);
+    border: none;
+    
 }
 
 @media (min-width: 768px) {
