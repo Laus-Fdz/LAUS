@@ -24,8 +24,6 @@ const btnNext = document.querySelector('#btnSig');
 const btnPrev = document.querySelector('#btnPrev');
 
 let currentImageIndex = 0;
-const totalImages = images.length;
-let intervalo; // Declaración del intervalo para el auto-slide
 
 // EventListeners y Funciones
 btnNext.addEventListener('click', nextImage); // Acción de avanzar al siguiente
@@ -34,7 +32,7 @@ btnPrev.addEventListener('click', prevImage); // Acción de retroceder
 // Función para avanzar a la siguiente imagen
 function nextImage() {
     currentImageIndex++;
-    if (currentImageIndex >= totalImages) {
+    if (currentImageIndex >= images.length) {
         currentImageIndex = 0; // Reinicia al inicio
     }
     actualizarSlider();
@@ -44,36 +42,34 @@ function nextImage() {
 function prevImage() {
     currentImageIndex--;
     if (currentImageIndex < 0) {
-        currentImageIndex = totalImages - 1; // Regresa al final
+        currentImageIndex = images.length - 1; // Regresa al final
     }
     actualizarSlider();
 }
 
 // Función para actualizar el desplazamiento del slider
 function actualizarSlider() {
-    const width = images[0].clientWidth; // Obtiene dinámicamente el ancho de la imagen
-    sliderImages.style.transform = `translateX(${-width * currentImageIndex}px)`; // Mueve el slider
+    const imageWidth = images[0].clientWidth; // Ancho de una imagen (ayuda de chatgpt)
+    sliderImages.style.transform = `translateX(${-imageWidth * currentImageIndex}px)`; // Mover el slider
 }
 
-// Función para cargar imágenes 
-function cargarImagenes() {
-    actualizarSlider(); // Asegura que el slider esté correctamente alineado al inicio
-}
 
-// Función de inicio automático del carrusel
-function iniciarCarrusel() {
-    intervalo = setInterval(nextImage, 3000); // Cambia la imagen cada 3 segundos
-}
 
-// Detiene el carrusel cuando el mouse está encima
+// Funcionalidad de intervalo
+
+window.addEventListener('resize', actualizarSlider); // Actualiza el slider al redimensionar la ventana
+
 sliderImages.addEventListener('mouseover', () => {
-    clearInterval(intervalo);
+    clearInterval(intervalos);
 });
 
-// Reinicia el carrusel cuando el mouse se va
-sliderImages.addEventListener('mouseout', iniciarCarrusel);
+sliderImages.addEventListener('mouseout', () => {
+    agregarIntervalo();
+});
 
-// Inicialización del carrusel
-cargarImagenes();
-iniciarCarrusel();
+function agregarIntervalo() {
+    intervalos = setInterval(nextImage, 3000);
+}
+
+agregarIntervalo(); // Inicia el intervalo
 
