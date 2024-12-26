@@ -45,7 +45,7 @@
 
 .Catalog-button {
     background-color: var(--color-primary);
-    color: var(--color-secondary);
+    color: var(--color-text-light);
     font-family: var(--font-regular);
     border: none;
     padding: 0.5rem 1rem;
@@ -67,6 +67,7 @@
     .Catalog-grid {
         grid-template-columns: repeat(3, 1fr); /* 3 columnas en escritorio */
         gap: 1rem; 
-        padding: 2rem; 
+        padding-top: 5rem; 
+        padding-bottom: 5rem;
     }
 }

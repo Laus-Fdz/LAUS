@@ -1,0 +1,141 @@
+
+/* contenedor principal */
+.About {
+    padding: 2rem;
+}
+
+/* Contenedor de la imagen y texto */
+.About-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    line-height: 1.5rem;
+}
+
+.About-title {
+    font-family: var(--font-bold);
+    font-size: var(--font-size-lg);
+    text-align: center;
+
+    padding-bottom: 1rem;
+}
+
+/* Imagen */
+
+.About-img img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.About-text {
+    
+    text-align: center;
+    font-family: var(--font-regular);
+    font-size: var(--font-size-sm);
+}
+
+.Acordeon {
+    margin-top: 2rem;
+    border: 1px solid var(--color-secondary);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Acordeon-title {
+    font-family: var(--font-regular);
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--color-text-dark);
+    font-size: var(--font-size-xl);
+    font-weight: bold;
+
+}
+
+
+.Acordeon-header {
+    background-color: var(--bg-color-dark);
+    padding: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: var(--font-size-md);
+    color: var(--color-text-light);
+    transition: background-color 0.3s ease;
+    font-family: var(--font-regular);
+}
+
+.Acordeon-header:hover {
+    background-color: var(--color-enphasis);
+    color: var(--color-text-dark);
+}
+
+.Acordeon-item:hover {
+    background-color: var(--bg-color-light);
+}
+
+.Acordeon-content {
+    padding: 2rem;
+    display: none;
+    
+    font-size: var(--font-size-sm);
+    color: var(--color-text-dark);
+    font-family: var(--font-regular);
+    font-size: var(--font-size-sm);
+    line-height: 1.5rem;
+    border-radius: 0 0 10px 10px;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+/* Monstrar contenido del acordeón */
+.Acordeon-item.active .Acordeon-content {
+    display: block;
+}
+
+
+@media (min-width: 768px) {
+   .About {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+   }
+
+   .About-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+    padding-bottom: 5rem;
+   }
+
+   .About-img img {
+    width: 500px;
+    max-width: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+   }
+
+   .About-title {
+    text-align: left;
+   }
+
+   .About-text {
+    text-align: left;
+    font-size: var(--font-size-sm);
+    max-width: 50%;
+   }
+
+
+   .Acordeon-header {
+    font-size: var(--font-size-md);
+    padding: 3rem;
+   }
+
+   .Acordeon-content {
+    font-size: var(--font-size-sm);
+    padding: 2rem;
+   }
+}
