@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Print 1",
+        "description": "lorem ipsum",
+        "price": 30,
+        "image": "./assets/img/chica-gris-cuadro.jpg",
+        "category": "print"
+    },
+    {
+        "id": 2,
+        "name": "Print 2",
+        "description": "Cuadro de chica en blanco",
+        "price": 30,
+        "image": "./assets/img/behind-blue-eyes.png",
+        "category": "print"
+    },
+    {
+        "id": 3,
+        "name": "Print 3",
+        "description": "lorem ipsum",
+        "price": 30,
+        "image": "./assets/img/billie-eilish.png",
+        "category": "print"
+    },
+    {
+        "id": 4,
+        "name": "Print 4",
+        "description": "lorem ipsum",
+        "price": 30,
+        "image": "./assets/img/chris-martin.png",
+        "category": "print"
+    },
+    {
+        "id": 5,
+        "name": "Print 5",
+        "description": "lorem ipsum",
+        "price": 30,
+        "image": "./assets/img/penguins.png",
+        "category": "print"
+    },
+    {
+        "id": 6,
+        "name": "Print 6",
+        "description": "lorem ipsum",
+        "price": 30,
+        "image": "./assets/img/retrato-familiar-personalizado.png",
+        "category": "print"
+    }
+]
