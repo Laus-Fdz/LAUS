@@ -1,0 +1,37 @@
+.Cart {
+    padding: 20px;
+}
+
+.Cart-title {
+    text-align: center;
+}
+
+.Cart-items {
+    margin-bottom: 20px;
+}
+
+.Cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--color-secondary);
+    padding-bottom: 10px;
+}
+
+.Cart-item img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.Cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Cart-checkout {
+    display: flex;
+    justify-content: flex-end;
+}

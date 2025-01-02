@@ -32,7 +32,7 @@ async function loadProductsData() {
         // Actualizar el contenido del producto en el HTML
         productTitle.textContent = currentProduct.name;
         productDescription.textContent = `${currentProduct.name}, ${currentProduct.description}`;
-        productPrice.textContent = `$${currentProduct.price}`;
+        productPrice.textContent = `${currentProduct.price}€`;
         productImg.src = currentProduct.image;
         productImg.alt = currentProduct.name;
 
@@ -57,18 +57,18 @@ function loadRelatedProducts(products, currentProductID) {
     // Mostrar productos relacionados (cargarlos del HTML)
     relatedProducts.forEach(product => {
         const item = document.createElement("a"); // se crea un enlace para cada producto relacionado
-        relatedItem.href = `./prints.html?id=${product.id}`; // se establece su enlace
-        relatedItem.classList.add("Related-item"); 
+        item.href = `./prints.html?id=${product.id}`; // se establece su enlace
+        item.classList.add("Related-item"); 
 
         // se añade la información del producto relacionado
-        relatedItem.innerHTML = `
+        item.innerHTML = `
                 <img src="${product.image}" alt="${product.name}">
                 <h3>${product.name}</h3>
-                <p>$${product.price}</p>
+                <p>€${product.price}</p>
         `;
 
         // se inserta el enlace dentro del contenedor de productos relacionados
-        relatedItemsContainer.appendChild(relatedItem);
+        relatedItemsContainer.appendChild(item);
     });
 }
 
