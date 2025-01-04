@@ -1,66 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="./css/controllers.css">
-        <link rel="stylesheet" href="./css/main.css">
-        <link rel="stylesheet" href="./css/cart.css">
-    
-        <!-- Iconos -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/controllers.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/cart.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
 
 </head>
+
 <body>
 
-        <!-- Encabezado -->
-        <header class="Header">
-            <nav class="Nav">
-                <a class="Nav-icon fab fa-instagram" href="https://www.instagram.com/itslauss/" target="_blank"></a>
-    
-                <h1 class="Nav-logo">
-                    <a href="./index.html">IT'S LAUS</a>
-                </h1>
-    
-                <!-- Contenedor para el carrito y menu móvil -->
-                <div class="Nav-shop" aria-label="Carrito">
-                    <a href="./carrito.html">
-                        <button class="Nav-icon fa-solid fa-cart-shopping" aria-label="Carrito"></button>
-                    </a>
-    
-                    <!-- Botón para el menú móvil -->
-                     <div class="Nav-menuMobile">
-                        <button class="Nav-menu fa-solid fa-bars" aria-label="Abrir menú"></button>
-    
-                        <!-- Menú móvil -->
-                        <ul class="Nav-menuLinks">
-                            <li><a href="./sobre-mi.html">Sobre mí</a></li>
-                            <li><a href="./prints.html">Prints</a></li>
-                            <li><a href="./contacto.html">Contacto</a></li>
-                        </ul>
-                     </div>
-    
+    <!-- Encabezado -->
+    <header class="Header">
+        <nav class="Nav">
+            <a class="Nav-icon fab fa-instagram" href="https://www.instagram.com/itslauss/" target="_blank"></a>
+
+            <h1 class="Nav-logo">
+                <a href="./index.html">IT'S LAUS</a>
+            </h1>
+
+            <!-- Contenedor para el carrito y menu móvil -->
+            <div class="Nav-shop" aria-label="Carrito">
+                <a href="./carrito.html">
+                    <button class="Nav-icon fa-solid fa-cart-shopping" aria-label="Carrito"></button>
+                </a>
+
+                <!-- Botón para el menú móvil -->
+                <div class="Nav-menuMobile">
+                    <button class="Nav-menu fa-solid fa-bars" aria-label="Abrir menú"></button>
+
+                    <!-- Menú móvil -->
+                    <ul class="Nav-menuLinks">
+                        <li><a href="./sobre-mi.html">Sobre mí</a></li>
+                        <li><a href="./prints.html">Prints</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
                 </div>
-            </nav>
-    
-            <!-- Enlaces de navegación para desktop -->
-            <ul class="Nav-links">
-                <li><a href="./sobre-mi.html">Sobre mi</a></li>
-                <li><a href="./prints.html">Prints</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-    
-        </header>
 
-        <main>
+            </div>
+        </nav>
 
-            <!-- sección de carrito de compra -->
-            <section class="Cart">
-                <h2 class="Cart-title"> Carrito </h2>
+        <!-- Enlaces de navegación para desktop -->
+        <ul class="Nav-links">
+            <li><a href="./sobre-mi.html">Sobre mi</a></li>
+            <li><a href="./prints.html">Prints</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+        </ul>
+
+    </header>
+
+    <main class="Main">
+
+        <!-- sección de carrito de compra -->
+        <section class="Cart">
+            <h2 class="Cart-title"> Carrito </h2>
+
+            <div class="Cart-container">
 
                 <!-- contenedor de productos -->
                 <div class="Cart-items">
@@ -69,17 +73,19 @@
 
                 <!-- Resumen -->
                 <div class="Cart-total">
-                    <h3>Total: <span class="Cart-total-price">0€</span></h3>
+                    <h3 class="Cart-total-title">Total: <span class="Cart-total-price">0€</span></h3>
                     <button class="Cart-checkout">Finalizar compra</button>
                 </div>
-            </section>
-        </main>
+            </div>
 
-        
+        </section>
+    </main>
 
 
 
-            <!-- Footer -->
+
+
+    <!-- Footer -->
     <footer class="Footer">
         <div class="Footer-content">
             <ul class="Footer-list">
@@ -92,7 +98,8 @@
     </footer>
 
     <script src="./js/menu.js"></script>
-    <script src="./js/cart.js"></script>
-    
+    <script src="./js/cart.js" defer></script>
+
 </body>
+
 </html>

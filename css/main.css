@@ -3,6 +3,11 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    margin: 0; /* Elimina cualquier margen por defecto del navegador */
+}
+
+.Main { 
+    flex-grow: 1; /* Ocupa todo el espacio disponible */
 }
 
 /*------------------------*/

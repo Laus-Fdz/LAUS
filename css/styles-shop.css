@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* 1 columna en móvil */
     gap: 1rem;
-    padding: 2rem;
+    padding: 1rem;
     margin: 0 auto;
     max-width: 1680px;
 }
