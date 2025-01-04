@@ -63,8 +63,8 @@ function loadRelatedProducts(products, currentProductID) {
         // se añade la información del producto relacionado
         item.innerHTML = `
                 <img src="${product.image}" alt="${product.name}">
-                <h3>${product.name}</h3>
-                <p>€${product.price}</p>
+                <h3 class="Related-subTitle">${product.name}</h3>
+                <p class="Related-description">€${product.price}</p>
         `;
 
         // se inserta el enlace dentro del contenedor de productos relacionados

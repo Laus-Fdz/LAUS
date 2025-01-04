@@ -1,11 +1,9 @@
-
 /* Galería */
-
 .Gallery {
     position: relative;
     overflow: hidden; /* Oculta las imágenes fuera del contenedor */
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* Altura completa del viewport */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,31 +13,31 @@
 .Gallery-slider {
     display: flex;
     transition: transform 0.5s ease-in-out; /* Transición suave */
-    width: 100%;
+    width: 100%; /* Asegura que el contenedor del slider ocupe todo el ancho */
+    position: relative; /* Asegura que no haya desplazamiento horizontal no deseado */
+    flex-direction: row; /* Apilamos las imágenes horizontalmente */
+    flex-wrap: nowrap; /* Impide que las imágenes se desborden */
 }
 
 .Gallery-image {
-    width: 100%; /* Cada imagen ocupa todo el ancho del contenedor */
-    height: 100vh; /* Altura completa del viewport */
-    object-fit: cover;
+    flex: 0 0 100%; /* Cada imagen ocupa el 100% del ancho del contenedor */
+    height: 100vh; /* Ajuste de altura para ocupar todo el viewport */
+    object-fit: cover; /* Cubre todo el área sin distorsionar la imagen */
 }
 
-.Btn{
+/* Botones */
+.Btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     border: none;
     cursor: pointer;
-
     z-index: 1;
     padding: 0;
     color: inherit;
-    font-size: 2rem;
-
-    background-color: none;
+    font-size: 1.5rem; /* Botones adecuados para móviles */
     background: none;
 }
-
 
 .u-izq {
     left: 20px;
@@ -49,11 +47,53 @@
     right: 20px;
 }
 
+/* Media Query para Tablets y Desktop */
+@media (max-width: 1024px) {
+    .Gallery {
+        height: 100vh; /* Mantener altura completa del viewport */
+    }
 
-/* Contenedor del carrusel */
-/* .Gallery-slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-} */
+    .Gallery-slider {
+        display: flex;
+        flex-direction: row; /* Las imágenes siguen alineadas horizontalmente */
+        height: 100%; /* Ocupa todo el alto del contenedor */
+    }
+
+    .Gallery-image {
+        width: 100%; /* Ocupa todo el ancho del viewport */
+        height: 100vh; /* Altura del viewport */
+        object-fit: cover; /* Las imágenes se ajustan correctamente */
+    }
+
+    /* Ajustar tamaño de los botones para dispositivos más grandes */
+    .Btn {
+        font-size: 1.75rem; /* Botones más grandes en tablets */
+    }
+}
+
+/* Media Query para Desktop */
+@media (min-width: 1025px) {
+    .Gallery {
+        height: 100vh; /* Mantener altura completa del viewport */
+    }
+
+    .Gallery-slider {
+        display: flex;
+        flex-direction: row; /* Asegurar que las imágenes se deslicen horizontalmente */
+        height: 100%; /* Ocupa todo el alto del contenedor */
+    }
+
+    .Gallery-image {
+        width: 100%; /* Asegura que las imágenes ocupen el 100% del ancho */
+        height: 100vh; /* Altura del viewport */
+        object-fit: cover; /* Las imágenes se ajustan correctamente */
+    }
+
+    /* Ajustar el tamaño de los botones para desktop */
+    .Btn {
+        font-size: 2rem; /* Botones más grandes en desktop */
+    }
+}
+
 
 

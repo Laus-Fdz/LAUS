@@ -1,50 +1,81 @@
 [
     {
         "id": 1,
-        "name": "Print 1",
-        "description": "lorem ipsum",
-        "price": 30,
+        "name": "La Chica de Gris",
+        "description": "Impresión digital en papel mate de alta calidad de 300g. Tamaño A4 (21x29,7cm) o A3 (29,7x42cm). La chica de Gris es una ilustración digital de una chica con un fondo gris. Ideal para decorar cualquier rincón de tu hogar, caracterizada por un contraste de luces y sombras, fondo minimalista que resalta la expresividad de la mirada, con toques dorados que aportan un contraste moderno y elegante a la composición. Se envía sin marco. Todas las imágenes están protegidas por derechos de la autora y no se pueden reproducir sin permiso.",
+        "price": 20,
         "image": "./assets/img/chica-gris-cuadro.jpg",
-        "category": "print"
+        "category": "print",
+        "gallery": [
+            "./assets/img/chica-gris-cuadro.jpg",
+            "./assets/img/la-chica-de-gris-mockup.jpg",
+            "./assets/img/la-chica-de-gris-mockup2.jpg",
+            "./assets/img/chica-gris.jpg"
+        ]
     },
     {
         "id": 2,
-        "name": "Print 2",
-        "description": "Cuadro de chica en blanco",
+        "name": "Behind Blue Eyes",
+        "description": "lorem ipsum",
         "price": 30,
         "image": "./assets/img/behind-blue-eyes.png",
-        "category": "print"
+        "category": "print",
+        "gallery": [
+            "./assets/img/chica-gris-cuadro.jpg",
+            "./assets/img/chica-gris-cuadro-2.jpg",
+            "./assets/img/chica-gris-cuadro-3.jpg"
+        ]
     },
     {
         "id": 3,
-        "name": "Print 3",
+        "name": "Billie Eilish",
         "description": "lorem ipsum",
         "price": 30,
         "image": "./assets/img/billie-eilish.png",
-        "category": "print"
+        "category": "print",
+        "gallery": [
+            "./assets/img/chica-gris-cuadro.jpg",
+            "./assets/img/chica-gris-cuadro-2.jpg",
+            "./assets/img/chica-gris-cuadro-3.jpg"
+        ]
     },
     {
         "id": 4,
-        "name": "Print 4",
+        "name": "Chris Martin",
         "description": "lorem ipsum",
         "price": 30,
         "image": "./assets/img/chris-martin.png",
-        "category": "print"
+        "category": "print",
+        "gallery": [
+            "./assets/img/chica-gris-cuadro.jpg",
+            "./assets/img/chica-gris-cuadro-2.jpg",
+            "./assets/img/chica-gris-cuadro-3.jpg"
+        ]
     },
     {
         "id": 5,
-        "name": "Print 5",
+        "name": "Penguins love",
         "description": "lorem ipsum",
         "price": 30,
         "image": "./assets/img/penguins.png",
-        "category": "print"
+        "category": "print",
+        "gallery": [
+            "./assets/img/chica-gris-cuadro.jpg",
+            "./assets/img/chica-gris-cuadro-2.jpg",
+            "./assets/img/chica-gris-cuadro-3.jpg"
+        ]
     },
     {
         "id": 6,
-        "name": "Print 6",
+        "name": "Retrato personalizado",
         "description": "lorem ipsum",
         "price": 30,
         "image": "./assets/img/retrato-familiar-personalizado.png",
-        "category": "print"
+        "category": "print",
+        "gallery": [
+            "./assets/img/chica-gris-cuadro.jpg",
+            "./assets/img/chica-gris-cuadro-2.jpg",
+            "./assets/img/chica-gris-cuadro-3.jpg"
+        ]
     }
 ]
