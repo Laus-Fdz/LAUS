@@ -71,6 +71,16 @@
     margin-top: 1rem;
 }
 
+.Cart-remove {
+    cursor: pointer;
+    background-color: none;
+    border: none;
+    background: none;
+    color: var(--color-primary);
+    font-size: var(--font-size-sm);
+    padding-top: 1rem;
+}
+
 /* Checkout button */
 .Cart-checkout {
     display: flex;

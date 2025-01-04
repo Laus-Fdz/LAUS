@@ -74,7 +74,7 @@ function loadCart() {
                 <h3>${product.name}</h3>
                 <p>${product.price}€</p>
                 <p>Cantidad: ${product.quantity}</p>
-                <button class="Cart-remove" data-id="${product.id}">Eliminar</button>
+                <button class="Cart-remove fas fa-trash" data-id="${product.id}"></button>
             </div>
         `; // Agregar imagen, nombre, precio, cantidad y botón de eliminar
 
