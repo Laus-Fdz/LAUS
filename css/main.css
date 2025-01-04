@@ -7,7 +7,7 @@
 }
 
 .Main { 
-    flex-grow: 1; /* Ocupa todo el espacio disponible */
+    flex: 1; /* Ocupa todo el espacio disponible */
 }
 
 /*------------------------*/

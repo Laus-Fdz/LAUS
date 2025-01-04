@@ -106,6 +106,14 @@
 
 /* Para tablet */
 @media (min-width: 768px) {
+    .Cart {
+        padding: 5rem;
+    }
+
+    .Cart-title {
+        font-size: var(--font-size-xl);
+        padding-bottom: 2rem;
+    }
     .Cart-container {
         flex-direction: row; /* Cambiar a fila en tablet */
         justify-content: space-between; /* Espacio entre los elementos */
