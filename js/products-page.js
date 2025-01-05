@@ -16,6 +16,7 @@ const productPrice = document.querySelector(".Product-price");
 const productImg = document.querySelector(".Product-img img");
 const relatedItemsContainer = document.querySelector(".Related-items");
 
+
 // Función para cargar los productos de JSON de forma asíncrona
 async function loadProductsData() {
     try {

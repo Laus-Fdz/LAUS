@@ -169,7 +169,7 @@
 /* Estilos del pie de página */
 .Footer {
     padding: 2rem;
-    margin-top: auto;
+    margin-top: auto; /* Empuja el footer hacia abajo cuando el contenido es insuficiente */
     text-align: center;
     background-color: var(--bg-color-dark);
     

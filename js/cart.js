@@ -2,9 +2,17 @@
 //         AGREGAR PRODUCTOS AL CARRITO !!
 // ----------------------------------------------------
 
-// Creamos variables y constantes
+// -----------------------------------------------------------
+// 1. Creamos constantes y variables
+// -----------------------------------------------------------
 const cartItemsContainer = document.querySelector(".Cart-items"); // contenedor de los productos en el carrito
 const cartTotalPrice = document.querySelector(".Cart-total-price"); // precio total del carrito
+
+
+
+// -----------------------------------------------------------
+// 2. EventListener y Funciones
+// -----------------------------------------------------------
 
 // EventListener para botón "Añadir al carrito"
 document.addEventListener("DOMContentLoaded", () => { // DOMContentLoaded: evento que se dispara cuando el documento HTML ha sido completamente cargado y parseado, PARA EVITAR QUE SE EJECUTE EL CÓDIGO ANTES DE QUE SE CARGUE EL DOM.
@@ -18,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => { // DOMContentLoaded: event
     // Cargar el carrito al cargar la página
     loadCart();
 });
+
 
 // Obtener detalles del producto actual
 function getProductDetails() { // Obtener detalles del producto
@@ -35,6 +44,7 @@ function getProductDetails() { // Obtener detalles del producto
     };
 }
 
+
 // Agregar producto al carrito
 function addToCart(product) {
     let cart = JSON.parse(localStorage.getItem("cart")) || []; // Obtener productos del carrito o crear un array vacío
@@ -50,6 +60,7 @@ function addToCart(product) {
     alert(`${product.name} ha sido añadido al carrito`); // Mostrar mensaje de confirmación
     console.log("Carrito actualizado:", cart); // Mostrar el carrito en la consola
 }
+
 
 // Cargar los productos del carrito
 function loadCart() {
@@ -77,14 +88,14 @@ function loadCart() {
 
                 <br>
                 <div class="Cart-item-quantity">
-                    <button class="Cart-quantity fas fa-minus" data-id="${product.id}"></button>
+                    <button class="Cart-quantity fas fa-minus" data-id="${product.id}"></button> 
                     <button class="Cart-quantity fas fa-plus" data-id="${product.id}"></button>
                 </div>
 
                 
                 <button class="Cart-remove fas fa-trash" data-id="${product.id}"></button>
             </div>
-        `; // Agregar imagen, nombre, precio, cantidad y botón de eliminar
+        `; // Agregar imagen, nombre, precio, botones de cantidad y botón de eliminar
 
         cartItemsContainer.appendChild(item); // Agregar el producto al contenedor
         total += product.price * product.quantity; // Calcular el precio total
@@ -110,6 +121,8 @@ function loadCart() {
         });
     });
 }
+
+
 
 // Actualizar cantidad de productos
 function updateQuantity(productID, action) {
