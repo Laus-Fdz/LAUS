@@ -68,7 +68,7 @@
 
 .Nav-links a:hover {
     color: var(--color-text-primary);
-    text-decoration: 2px underline var(--color-secondary);
+    text-decoration: 4px underline var(--color-emphasis);
 
 }
 

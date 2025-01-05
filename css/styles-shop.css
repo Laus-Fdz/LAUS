@@ -1,23 +1,29 @@
 /* Tabs */
+
 .Tabs-buttons {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-top: 50px;
 }
 
 .Tabs-button {
     background-color: var(--color-primary);
     border: none;
+    border-radius: 8px 8px 0px 0px;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
     margin: 0 5px;
     transition: background-color 0.3s ;
+
+    color: var(--color-text-light);
 }
 
 .Tabs-button.u-active {
     background-color: var(--color-emphasis);
     font-weight: bold;
+
+    color: var(--color-text-dark);
 }
 
 .Tabs-contenido {
@@ -26,6 +32,7 @@
 
 .Tabs-contenido.u-visible {
     display: block;
+   
 }
 
 /* Catálogo de productos */
