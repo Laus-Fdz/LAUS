@@ -99,12 +99,37 @@
     
 }
 
-/* Responsive desktop */
+/* Tablet */
 @media (min-width: 768px) {
     .Catalog-grid {
-        grid-template-columns: repeat(3, 1fr); /* 3 columnas en escritorio */
-        gap: 1rem; 
-        padding-top: 5rem; 
-        padding-bottom: 5rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
+    .Tabs-button {
+        font-size: 18px;
+        padding: 12px 30px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .Catalog-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 2rem 3rem;
+    }
+    
+    .Catalog-title {
+        font-size: var(--font-size-md);
+    }
+    
+    .Catalog-price {
+        font-size: var(--font-size-sm);
+    }
+    
+    .Catalog-button {
+        padding: 0.75rem 1.5rem;
     }
 }

@@ -11,6 +11,8 @@
     gap: 2rem;
     align-items: center;
     line-height: 1.5rem;
+
+    margin-bottom: 1rem;
 }
 
 .About-title {
@@ -40,7 +42,7 @@
 }
 
 .Acordeon {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     margin-bottom: 2rem;
     border: 1px solid var(--color-secondary);
     border-radius: 20px;
@@ -51,9 +53,9 @@
 .Acordeon-title {
     font-family: var(--font-regular);
     text-align: center;
-    padding: 1.5rem;
+    padding: 1rem;
     color: var(--color-text-dark);
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-lg);
     font-weight: bold;
 
 }
@@ -64,7 +66,7 @@
     padding: 2rem;
     cursor: pointer;
     font-weight: bold;
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
     color: var(--color-text-light);
     transition: background-color 0.3s ease;
     font-family: var(--font-regular);
@@ -98,49 +100,71 @@
 }
 
 
+/* Tablet */
 @media (min-width: 768px) {
-   .About {
-    max-width: 1200px;
-    margin: 0 auto; 
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-   }
+    .About {
+        padding: 3rem;
+    }
 
-   .About-container {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 4rem;
-    padding-bottom: 5rem;
-   }
+    .About-container {
+        flex-direction: row;
+        gap: 2rem;
+        align-items: flex-start;
+    }
 
-   .About-img img {
-    width: 500px;
-    max-width: none;
-    border-radius: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-   }
+    .About-img img {
+        width: 400px;
+    }
 
-   .About-title {
-    text-align: left;
-    font-size: var(--font-size-xxl);
-    line-height: 3.5rem;
-   }
+    .About-text {
+        text-align: left;
+        max-width: none;
+    }
+}
 
-   .About-text {
-    text-align: left;
-    font-size: var(--font-size-sm);
-    max-width: 50%;
-   }
+/* Desktop */
+@media (min-width: 1024px) {
+    .About {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 5rem;
+    }
 
+    .About-container {
+        gap: 3rem;
+    }
 
-   .Acordeon-header {
-    font-size: var(--font-size-md);
-    padding: 3rem;
-   }
+    .About-img {
+        flex: 1;
+    }
 
-   .Acordeon-content {
-    font-size: var(--font-size-sm);
-    padding: 2rem;
-   }
+    .About-img img {
+        width: 500px;
+        max-width: none;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        object-fit: cover; 
+    }
+
+    .About-title {
+        text-align: left;
+    }
+
+    .About-text {
+        flex: 1;
+        font-size: var(--font-size-sm);
+    }
+
+    .Acordeon {
+        margin: 4rem auto;
+        max-width: 800px;
+    }
+    .Acordeon-title {
+        font-size: var(--font-size-lg);
+    }
+
+    .Acordeon-header {
+        padding: 2.5rem;
+        font-size: var(--font-size-md);
+    }
 }

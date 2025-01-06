@@ -1,81 +1,159 @@
 [
     {
         "id": 1,
-        "name": "La Chica de Gris",
+        "name": "The Girl in Grey",
         "description": "Impresión digital en papel mate de alta calidad de 300g. Tamaño A4 (21x29,7cm) o A3 (29,7x42cm). La chica de Gris es una ilustración digital de una chica con un fondo gris. Ideal para decorar cualquier rincón de tu hogar, caracterizada por un contraste de luces y sombras, fondo minimalista que resalta la expresividad de la mirada, con toques dorados que aportan un contraste moderno y elegante a la composición. Se envía sin marco. Todas las imágenes están protegidas por derechos de la autora y no se pueden reproducir sin permiso.",
-        "price": 20,
-        "image": "./assets/img/chica-gris-cuadro.jpg",
+        "price": 22,
+        "image": "./assets/img/prints/chica-gris-cuadro.jpg",
         "category": "print",
         "gallery": [
-            "./assets/img/chica-gris-cuadro.jpg",
-            "./assets/img/la-chica-de-gris-mockup.jpg",
-            "./assets/img/la-chica-de-gris-mockup2.jpg",
-            "./assets/img/chica-gris.jpg"
+            "./assets/img/prints/chica-gris-cuadro.jpg",
+            "./assets/img/prints/la-chica-de-gris-mockup.jpg",
+            "./assets/img/prints/la-chica-de-gris-mockup2.jpg",
+            "./assets/img/prints/chica-gris.jpg"
         ]
     },
     {
         "id": 2,
         "name": "Behind Blue Eyes",
         "description": "lorem ipsum",
-        "price": 30,
-        "image": "./assets/img/behind-blue-eyes.png",
+        "price": 22,
+        "image": "./assets/img/prints/behind-blue-eyes.png",
         "category": "print",
         "gallery": [
-            "./assets/img/chica-gris-cuadro.jpg",
-            "./assets/img/chica-gris-cuadro-2.jpg",
-            "./assets/img/chica-gris-cuadro-3.jpg"
+            "./assets/img/prints/chica-gris-cuadro.jpg",
+            "./assets/img/prints/chica-gris-cuadro-2.jpg",
+            "./assets/img/prints/chica-gris-cuadro-3.jpg"
         ]
     },
     {
         "id": 3,
         "name": "Billie Eilish",
         "description": "lorem ipsum",
-        "price": 30,
-        "image": "./assets/img/billie-eilish.png",
+        "price": 22,
+        "image": "./assets/img/prints/billie-eilish.png",
         "category": "print",
         "gallery": [
-            "./assets/img/chica-gris-cuadro.jpg",
-            "./assets/img/chica-gris-cuadro-2.jpg",
-            "./assets/img/chica-gris-cuadro-3.jpg"
+            "./assets/img/prints/chica-gris-cuadro.jpg",
+            "./assets/img/prints/chica-gris-cuadro-2.jpg",
+            "./assets/img/prints/chica-gris-cuadro-3.jpg"
         ]
     },
     {
         "id": 4,
         "name": "Chris Martin",
         "description": "lorem ipsum",
-        "price": 30,
-        "image": "./assets/img/chris-martin.png",
+        "price": 22,
+        "image": "./assets/img/prints/chris-martin.png",
         "category": "print",
         "gallery": [
-            "./assets/img/chica-gris-cuadro.jpg",
-            "./assets/img/chica-gris-cuadro-2.jpg",
-            "./assets/img/chica-gris-cuadro-3.jpg"
+            "./assets/img/prints/chica-gris-cuadro.jpg",
+            "./assets/img/prints/chica-gris-cuadro-2.jpg",
+            "./assets/img/prints/chica-gris-cuadro-3.jpg"
         ]
     },
     {
         "id": 5,
         "name": "Penguins love",
         "description": "lorem ipsum",
-        "price": 30,
-        "image": "./assets/img/penguins.png",
+        "price": 22,
+        "image": "./assets/img/prints/penguins.png",
         "category": "print",
         "gallery": [
-            "./assets/img/chica-gris-cuadro.jpg",
-            "./assets/img/chica-gris-cuadro-2.jpg",
-            "./assets/img/chica-gris-cuadro-3.jpg"
+            "./assets/img/prints/chica-gris-cuadro.jpg",
+            "./assets/img/prints/chica-gris-cuadro-2.jpg",
+            "./assets/img/prints/chica-gris-cuadro-3.jpg"
         ]
     },
     {
         "id": 6,
         "name": "Retrato personalizado",
         "description": "lorem ipsum",
-        "price": 30,
-        "image": "./assets/img/retrato-familiar-personalizado.png",
+        "price": 80,
+        "image": "./assets/img/prints/retrato-familiar-personalizado.png",
         "category": "print",
         "gallery": [
-            "./assets/img/chica-gris-cuadro.jpg",
-            "./assets/img/chica-gris-cuadro-2.jpg",
-            "./assets/img/chica-gris-cuadro-3.jpg"
+            "./assets/img/prints/chica-gris-cuadro.jpg",
+            "./assets/img/prints/chica-gris-cuadro-2.jpg",
+            "./assets/img/prints/chica-gris-cuadro-3.jpg"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Jinx - Arcane",
+        "description": "lorem ipsum",
+        "price": 150,
+        "image": "./assets/img/originales/jinx-original.png",
+        "category": "Originales",
+        "gallery": [
+            "./assets/img/originales/jinx-original.png",
+            "./assets/img/originales/jix-original2.png",
+            "./assets/img/originales/jinx-original3.png"
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Tomas Shelby",
+        "description": "lorem ipsum",
+        "price": 95,
+        "image": "./assets/img/originales/tomas-shelby-original.png",
+        "category": "Originales",
+        "gallery": [
+            "./assets/img/originales/tomas-shelby-original.png",
+            "./assets/img/originales/tomas-shelby-original2.png",
+            "./assets/img/originales/tomas-shelby-original3.png"
+        ]
+    },
+    {
+        "id": 9,
+        "name": "The Fear",
+        "description": "lorem ipsum",
+        "price": 120,
+        "image": "./assets/img/originales/the-fear-original.png",
+        "category": "Originales",
+        "gallery": [
+            "./assets/img/originales/the-fear-original.png",
+            "./assets/img/originales/the-fear-original2.png",
+            "./assets/img/originales/the-fear-original3.png"
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Bloody Hand",
+        "description": "lorem ipsum",
+        "price": 110,
+        "image": "./assets/img/originales/bloody-hand-original.png",
+        "category": "Originales",
+        "gallery": [
+            "./assets/img/originales/bloody-hand-original.png",
+            "./assets/img/originales/bloody-hand-original2.png",
+            "./assets/img/originales/bloody-hand-original3.png"
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Jane's History",
+        "description": "lorem ipsum",
+        "price": 60,
+        "image": "./assets/img/originales/jane-history-original.png",
+        "category": "Originales",
+        "gallery": [
+            "./assets/img/originales/jane-history-original.png",
+            "./assets/img/originales/jane-history-original2.png",
+            "./assets/img/originales/jane-history-original3.png"
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Ellie The Last Of Us",
+        "description": "lorem ipsum",
+        "price": 75,
+        "image": "./assets/img/originales/ellie-original.png",
+        "category": "Originales",
+        "gallery": [
+            "./assets/img/originales/ellie-original.png",
+            "./assets/img/originales/ellie-original2.png",
+            "./assets/img/originales/ellie-original3.png"
         ]
     }
 ]

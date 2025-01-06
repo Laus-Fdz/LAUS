@@ -37,6 +37,20 @@ async function loadProductsData() {
         productImg.src = currentProduct.image;
         productImg.alt = currentProduct.name;
 
+        //Cargar imágenes de la galería
+        const galleryContainer = document.querySelector('.Product-img-gallery');
+        galleryContainer.innerHTML = ''; // limpiar la galería ya existente
+
+        currentProduct.gallery.forEach(imageSrc => {
+            const img = document.createElement('img');
+            img.src = imageSrc;
+            img.alt = currentProduct.name;
+            img.addEventListener("click", function() {
+                productImg.src = imageSrc;
+            });
+            galleryContainer.appendChild(img);
+        });
+
         // Se llama a otra función para cargar productos relacionados
         loadRelatedProducts(products, currentProduct.id);
 
