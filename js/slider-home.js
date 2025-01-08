@@ -23,7 +23,7 @@ btnPrev.addEventListener('click', prevImage);
 // Avanza a la siguiente imagen
 function nextImage() {
     currentImageIndex++;
-    if (currentImageIndex >= images.length) {
+    if (currentImageIndex >= images.length-1) {
         currentImageIndex = 0; // Vuelve a la primera imagen si es el final
     }
     actualizarSlider();
@@ -72,3 +72,4 @@ sliderImages.addEventListener('mouseout', () => {
     agregarIntervalo(); // Reanuda el intervalo
 });
 agregarIntervalo();
+
