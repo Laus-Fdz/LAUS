@@ -16,6 +16,9 @@ const productPrice = document.querySelector(".Product-price");
 const productImg = document.querySelector(".Product-img img");
 const relatedItemsContainer = document.querySelector(".Related-items");
 
+// para seleccionar tamaños
+const sizeSelect = document.querySelector(".Product-size-select");
+
 
 // Función para cargar los productos de JSON de forma asíncrona
 async function loadProductsData() {
@@ -33,9 +36,38 @@ async function loadProductsData() {
         // Actualizar el contenido del producto en el HTML
         productTitle.textContent = currentProduct.name;
         productDescription.textContent = `${currentProduct.name}, ${currentProduct.description}`;
-        productPrice.textContent = `${currentProduct.price}€`;
+        productPrice.textContent = `${currentProduct.price[currentProduct.sizes[0]]}€`;
         productImg.src = currentProduct.image;
         productImg.alt = currentProduct.name;
+
+        // Configurar las opciones de tamaño
+        sizeSelect.innerHTML = ""; // limpiar las opciones actuales
+        currentProduct.sizes.forEach(size => {
+            const option = document.createElement("option");
+            option.value = size;
+            option.textContent = size;
+            sizeSelect.appendChild(option);
+        });
+
+        // Actualizar el precio dinámicamente al cambiar el tamaño
+        sizeSelect.addEventListener("change", () => {
+            const selectedSize = sizeSelect.value;
+            const newPrice = currentProduct.price[selectedSize];
+            productPrice.textContent = `${newPrice}€`;
+        });
+
+        // Comprobación para evitar errores si selectedSize no tiene precio
+        sizeSelect.addEventListener("change", () => {
+            const selectedSize = sizeSelect.value;
+            const newPrice = currentProduct.price[selectedSize];
+            if (newPrice !== undefined) {
+                productPrice.textContent = `${newPrice}€`;
+            } else {
+                productPrice.textContent = "No disponible";
+            }
+        });
+
+
 
         //Cargar imágenes de la galería
         const galleryContainer = document.querySelector('.Product-img-gallery');

@@ -3,7 +3,14 @@
         "id": 1,
         "name": "The Girl in Grey",
         "description": "Impresión digital en papel mate de alta calidad de 300g. Tamaño A4 (21x29,7cm) o A3 (29,7x42cm). La chica de Gris es una ilustración digital de una chica con un fondo gris. Ideal para decorar cualquier rincón de tu hogar, caracterizada por un contraste de luces y sombras, fondo minimalista que resalta la expresividad de la mirada, con toques dorados que aportan un contraste moderno y elegante a la composición. Se envía sin marco. Todas las imágenes están protegidas por derechos de la autora y no se pueden reproducir sin permiso.",
-        "price": 22,
+        "price": {
+            "A4": 20,
+            "A3": 35
+        },
+        "sizes": [
+            "A4", "A3"
+        ], 
+    
         "image": "./assets/img/prints/chica-gris-cuadro.jpg",
         "category": "print",
         "gallery": [
@@ -17,7 +24,13 @@
         "id": 2,
         "name": "Behind Blue Eyes",
         "description": "lorem ipsum",
-        "price": 22,
+        "price": {
+            "A4": 20,
+            "A3": 35
+        },
+        "sizes": [
+            "A4", "A3"
+        ], 
         "image": "./assets/img/prints/behind-blue-eyes.png",
         "category": "print",
         "gallery": [
@@ -30,7 +43,13 @@
         "id": 3,
         "name": "Billie Eilish",
         "description": "lorem ipsum",
-        "price": 22,
+        "price": {
+            "A4": 20,
+            "A3": 35
+        },
+        "sizes": [
+            "A4", "A3"
+        ], 
         "image": "./assets/img/prints/billie-eilish.png",
         "category": "print",
         "gallery": [
@@ -43,7 +62,13 @@
         "id": 4,
         "name": "Chris Martin",
         "description": "lorem ipsum",
-        "price": 22,
+        "price": {
+            "A4": 20,
+            "A3": 35
+        },
+        "sizes": [
+            "A4", "A3"
+        ], 
         "image": "./assets/img/prints/chris-martin.png",
         "category": "print",
         "gallery": [
@@ -56,7 +81,13 @@
         "id": 5,
         "name": "Penguins love",
         "description": "lorem ipsum",
-        "price": 22,
+        "price": {
+            "A4": 20,
+            "A3": 35
+        },
+        "sizes": [
+            "A4", "A3"
+        ], 
         "image": "./assets/img/prints/penguins.png",
         "category": "print",
         "gallery": [
@@ -69,7 +100,13 @@
         "id": 6,
         "name": "Retrato personalizado",
         "description": "lorem ipsum",
-        "price": 80,
+        "price": {
+            "A4": 20,
+            "A3": 35
+        },
+        "sizes": [
+            "A4", "A3"
+        ], 
         "image": "./assets/img/prints/retrato-familiar-personalizado.png",
         "category": "print",
         "gallery": [
@@ -82,7 +119,12 @@
         "id": 7,
         "name": "Jinx - Arcane",
         "description": "lorem ipsum",
-        "price": 150,
+        "price": {
+            "A4": 150
+        },
+        "sizes": [
+            "A4"
+        ], 
         "image": "./assets/img/originales/jinx-original.png",
         "category": "Originales",
         "gallery": [
@@ -95,7 +137,12 @@
         "id": 8,
         "name": "Tomas Shelby",
         "description": "lorem ipsum",
-        "price": 95,
+        "price": {
+            "A4": 95
+        },
+        "sizes": [
+            "A4"
+        ], 
         "image": "./assets/img/originales/tomas-shelby-original.png",
         "category": "Originales",
         "gallery": [
@@ -108,7 +155,12 @@
         "id": 9,
         "name": "The Fear",
         "description": "lorem ipsum",
-        "price": 120,
+        "price": {
+            "A5": 120
+        },
+        "sizes": [
+            "A5"
+        ], 
         "image": "./assets/img/originales/the-fear-original.png",
         "category": "Originales",
         "gallery": [
@@ -121,7 +173,12 @@
         "id": 10,
         "name": "Bloody Hand",
         "description": "lorem ipsum",
-        "price": 110,
+        "price": {
+            "A5": 110
+        },
+        "sizes": [
+            "A5"
+        ], 
         "image": "./assets/img/originales/bloody-hand-original.png",
         "category": "Originales",
         "gallery": [
@@ -134,7 +191,12 @@
         "id": 11,
         "name": "Jane's History",
         "description": "lorem ipsum",
-        "price": 60,
+        "price": {
+            "A5": 60
+        },
+        "sizes": [
+            "A5"
+        ], 
         "image": "./assets/img/originales/jane-history-original.png",
         "category": "Originales",
         "gallery": [
@@ -147,7 +209,12 @@
         "id": 12,
         "name": "Ellie The Last Of Us",
         "description": "lorem ipsum",
-        "price": 75,
+        "price": {
+            "A4": 75
+        },
+        "sizes": [
+            "A4"
+        ], 
         "image": "./assets/img/originales/ellie-original.png",
         "category": "Originales",
         "gallery": [

@@ -155,3 +155,14 @@ function removeFromCart(productID) {
     alert("¿Seguro que quieres eliminar este producto del carrito?");
     loadCart(); // Recargar el carrito
 }
+
+
+// Agregar evento al botón de comprar
+document.getElementById("proceedToCheckout").addEventListener("click", () => {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    if (cart.length === 0) {
+        alert("El carrito está vacío")
+    } else {
+        window.location.href = "./pasarela-pago.html";
+    }
+});

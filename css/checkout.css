@@ -1,0 +1,230 @@
+.Checkout {
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    
+
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.Checkout-title {
+    font-size: var(--font-size-lg);
+    font-weight: bold;
+    font-family: var(--font-regular);
+
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Contenedor principal */
+
+.Checkout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px;
+}
+
+
+/* Resumen del pedido */
+
+.Checkout-subtitle {
+    font-size: var(--font-size-md);
+    font-weight: bold;
+    font-family: var(--font-regular);
+
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.Checkout-items {
+    margin-bottom: 15px;
+}
+
+.Checkout-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    
+}
+
+.Checkout-item:last-child {
+    border-bottom: none;
+}
+
+.Checkout-total {
+    font-size: var(--font-size-sm);
+    font-family: var(--font-regular);
+    font-weight: bold;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.Checkout-total-price {
+    color: var(--color-primary);
+}
+
+
+/* Información de envío */
+
+.Checkout-address {
+    flex: 1;
+    min-width: 300px;
+    
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.Form-group {
+    margin-bottom: 15px;
+}
+
+.Form-group-label {
+    font-size: var(--font-size-sm);
+    font-family: var(--font-regular);
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color-primary);
+}
+
+.Form-group-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: var(--font-size-sm);
+    font-family: var(--font-regular);
+    box-sizing: border-box;
+}
+
+.Form-submit {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: var(--font-size-sm);
+
+    text-align: center;
+    background-color: var(--bg-color-dark);
+    color: var(--color-text-light);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Form-submit:hover {
+    background-color: var(--color-emphasis);
+    color: var(--color-text-dark);
+}
+
+
+
+/* Información de pago */
+
+.Checkout-payment {
+    flex: 1;
+    min-width: 300px;
+    
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.Checkout-payment-label {
+    font-size: var(--font-size-sm);
+    font-family: var(--font-regular);
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color-primary);
+}
+
+.Checkout-payment-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: var(--font-size-sm);
+    font-family: var(--font-regular);
+    box-sizing: border-box;
+}
+
+.Checkout-payment-input:focus {
+    border-color: var(--color-emphasis);
+    outline: none;
+}
+
+.Checkout-submit {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: var(--font-size-sm);
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--bg-color-dark);
+    color: var(--color-text-light);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3 ease;
+}
+
+.Checkout-submit:hover {
+    background-color: var(--color-emphasis);
+    color: var(--color-text-dark);
+}
+
+/* Responsive tablet */
+@media (min-width: 768px) {
+    .Checkout-container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .Checkout-address, .Checkout-payment {
+        flex: 1;
+        max-width: 45%;
+    }
+    .Checkout-summary {
+        flex: 1;
+        max-width: 30%;
+    }
+
+    .Form-submit, .Checkout-submit {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* Responsive desktop */
+@media (min-width: 1024px) {
+    .Checkout-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+    }
+
+    .Checkout-summary {
+        grid-column: 1 / 2; /* Aparecerá en la primera columna */
+        align-self: flex-start;
+    }
+
+    .Checkout-address {
+        grid-column: 2 / 3; /* Aparecerá en la segunda columna */
+    }
+
+    .Checkout-payment {
+        grid-column: 3 / 4; /* Aparecerá en la tercera columna */
+    }
+
+    .Form-group-input, .Checkout-payment-input {
+        font-size: var(--font-size-sm) ;
+        margin-bottom: 30px;
+    }
+}
