@@ -1,0 +1,42 @@
+.Main {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+.Confirmation-title {
+    font-size: var(--font-size-md);
+    color: var(--color-primary);
+    font-family: var(--font-regular);
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.Confirmation-text {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-dark);
+    font-family: var(--font-regular);
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.Confirmacion-button {
+    display: inline-block;
+    padding: 10px 20px;
+    
+    background-color: var(--bg-color-dark);
+    color: var(--color-text-light);
+    border: none;
+    border-radius: 8px;
+    font-size: var(--font-size-sm);
+    font-family: var(--font-regular);
+    transition: background-color 0.3s ease;
+}
+
+.Confirmacion-button:hover {
+    background-color: var(--color-emphasis);
+    color: var(--color-text-dark);
+    font-weight: bold;
+    cursor: pointer;
+}

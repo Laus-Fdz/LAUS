@@ -41,13 +41,13 @@
 
 .Checkout-items {
     margin-bottom: 15px;
+    font-family: var(--font-regular);
 }
 
 .Checkout-item {
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
-    
+    padding: 10px 0;    
 }
 
 .Checkout-item:last-child {
@@ -101,6 +101,11 @@
     box-sizing: border-box;
 }
 
+.Form-group-input:focus {
+    border-color: var(--color-emphasis);
+    outline: none;
+}
+
 .Form-submit {
     display: block;
     width: 100%;
@@ -119,6 +124,7 @@
 .Form-submit:hover {
     background-color: var(--color-emphasis);
     color: var(--color-text-dark);
+    font-weight: bold;
 }
 
 
