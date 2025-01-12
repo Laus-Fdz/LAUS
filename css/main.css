@@ -35,7 +35,6 @@ body {
 .Logo {
     width: 100px;
     height: auto;
-    margin-left: 40px;
 }
 
 /* Enlaces de navegación - menu para desktop */
@@ -219,6 +218,10 @@ body {
         padding:  1rem
     }
 
+    .Logo {
+        margin-left: 40px;
+    }
+
     /* Ajusta la barra de navegación */
     .Nav {
         align-items: center;
@@ -237,6 +240,10 @@ body {
 
     .Nav-menuMobile { 
         display: none;
+    }
+
+    .fa-brands, .fab{
+        margin-right: 50px;
     }
 
     /* cambia la lista del footer a fila */
