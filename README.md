@@ -4,8 +4,6 @@ Diseñadora y Desarrolladora: Laura Fernández Solano
 
 ## LAUS | Tienda de prints e ilustraciones
 
-## Descripción General
-
 **LAUS** es una tienda online dedicada a la venta de prints e ilustraciones personales.
 
 ## Paleta de color utilizada
