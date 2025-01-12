@@ -83,6 +83,11 @@
     cursor: pointer;
 }
 
+.Product-size-select:focus {
+    border-color: var(--color-emphasis);
+    outline: none;
+}
+
 /* Botón de añadir al carrito */
 
 .Product-button {

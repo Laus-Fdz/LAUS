@@ -34,9 +34,10 @@
         "image": "./assets/img/prints/behind-blue-eyes.png",
         "category": "print",
         "gallery": [
-            "./assets/img/prints/chica-gris-cuadro.jpg",
-            "./assets/img/prints/chica-gris-cuadro-2.png",
-            "./assets/img/prints/chica-gris-cuadro-3.jpg"
+            "./assets/img/prints/behind-blue-eyes.png",
+            "./assets/img/prints/behind-blue-eyes-mockup.png",
+            "./assets/img/prints/behind-blue-eyes-mockup2.png",
+            "./assets/img/prints/behind-blue-eyes-original.jpg"
         ]
     },
     {
@@ -53,15 +54,16 @@
         "image": "./assets/img/prints/billie-eilish.png",
         "category": "print",
         "gallery": [
-            "./assets/img/prints/chica-gris-cuadro.jpg",
-            "./assets/img/prints/chica-gris-cuadro-2.jpg",
-            "./assets/img/prints/chica-gris-cuadro-3.jpg"
+            "./assets/img/prints/billie-eilish.png",
+            "./assets/img/prints/billie-eilish-mockup.png",
+            "./assets/img/prints/billie-eilish-mockup2.png",
+            "./assets/img/prints/billie-eilish-original.jpg"
         ]
     },
     {
         "id": 4,
         "name": "Chris Martin",
-        "description": "Prints en impresión digital sobre papel mate de alta calidad de 300g. Tamaño A4 (21x29,7 cm) o o A3 (29,7x42cm). Cada impresión es firmada. SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
+        "description": "Prints en impresión digital sobre papel mate de alta calidad de 300g. Tamaño A4 (21x29,7 cm) o A3 (29,7x42cm). Cada impresión es firmada. SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
         "price": {
             "A4": 20,
             "A3": 35
@@ -72,16 +74,18 @@
         "image": "./assets/img/prints/chris-martin.png",
         "category": "print",
         "gallery": [
-            "./assets/img/prints/chica-gris-cuadro.jpg",
-            "./assets/img/prints/chica-gris-cuadro-2.jpg",
-            "./assets/img/prints/chica-gris-cuadro-3.jpg"
+            "./assets/img/prints/chris-martin.png",
+            "./assets/img/prints/chris-martin-mockup.png",
+            "./assets/img/prints/chris-martin-mockup2.png",
+            "./assets/img/prints/chris-martin-original.jpg"
         ]
     },
     {
         "id": 5,
         "name": "Penguins love",
-        "description": "Prints en impresión digital sobre papel mate de alta calidad de 300g. Tamaño A4 (21x29,7 cm) o o A3 (29,7x42cm). Cada impresión es firmada. SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
+        "description": "Prints en impresión digital sobre papel mate de alta calidad de 300g. Tamaño cuadrado (15x15cm)A4 (21x29,7 cm) o o A3 (29,7x42cm). Cada impresión es firmada. SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
         "price": {
+            "15x15": 15,
             "A4": 20,
             "A3": 35
         },
@@ -91,9 +95,10 @@
         "image": "./assets/img/prints/penguins.png",
         "category": "print",
         "gallery": [
-            "./assets/img/prints/chica-gris-cuadro.jpg",
-            "./assets/img/prints/chica-gris-cuadro-2.jpg",
-            "./assets/img/prints/chica-gris-cuadro-3.jpg"
+            "./assets/img/prints/penguins.png",
+            "./assets/img/prints/penguins-mockup.png",
+            "./assets/img/prints/penguins-mockup2.png",
+            "./assets/img/prints/couple-penguin.jpg"
         ]
     },
     {
@@ -110,9 +115,10 @@
         "image": "./assets/img/prints/retrato-familiar-personalizado.png",
         "category": "print",
         "gallery": [
-            "./assets/img/prints/chica-gris-cuadro.jpg",
-            "./assets/img/prints/chica-gris-cuadro-2.jpg",
-            "./assets/img/prints/chica-gris-cuadro-3.jpg"
+            "./assets/img/prints/retrato-familiar-personalizado.png",
+            "./assets/img/prints/retrato-familiar-mockup.png",
+            "./assets/img/prints/retrato-familiar-mockup2.png",
+            "./assets/img/prints/ilustracion-familiar.jpg"
         ]
     },
     {
