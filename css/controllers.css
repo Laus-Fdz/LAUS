@@ -27,11 +27,11 @@
 
 :root {
     /* colores */
-    --color-primary: #333333;
+    --color-primary: #1D1D1B;
     --color-secondary: #C6C6C6;
-    --color-text: #333333;
+    --color-text: #1D1D1B;
     --bg-color: #F2F1ED;
-    --bg-color-dark: #333;
+    --bg-color-dark: #1D1D1B;
     --color-emphasis: #FFEE88 ;
 
     /* tipografías */

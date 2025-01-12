@@ -39,11 +39,13 @@
     text-align: center;
     font-family: var(--font-regular);
     font-size: var(--font-size-sm);
+
+    margin-bottom: 2rem;
 }
 
 .Acordeon {
     margin-top: 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     border: 1px solid var(--color-secondary);
     border-radius: 20px;
     overflow: hidden;
@@ -53,11 +55,13 @@
 .Acordeon-title {
     font-family: var(--font-bold);
     text-align: center;
-    padding: 1rem;
+    
     color: var(--color-text-dark);
     font-size: var(--font-size-lg);
     font-weight: bold;
+    line-height: 1em;
 
+    margin-bottom: 1rem;
 }
 
 
@@ -73,7 +77,7 @@
 }
 
 .Acordeon-header:hover {
-    background-color: var(--color-enphasis);
+    background-color: var(--color-emphasis);
     color: var(--color-text-dark);
 }
 
@@ -106,6 +110,10 @@
         padding: 3rem;
     }
 
+    .About-title {
+        text-align: left;
+    }
+
     .About-container {
         flex-direction: row;
         gap: 2rem;
@@ -120,6 +128,11 @@
         text-align: left;
         max-width: none;
     }
+    .Acordeon-title {
+        font-size: var(--font-size-lg);
+        margin-top: 4rem;
+
+    }
 }
 
 /* Desktop */
@@ -130,8 +143,10 @@
         padding: 5rem;
     }
 
+    
+
     .About-container {
-        gap: 3rem;
+        gap: 2rem;
     }
 
     .About-img {
@@ -156,11 +171,12 @@
     }
 
     .Acordeon {
-        margin: 4rem auto;
+        margin: 2rem auto;
         max-width: 800px;
     }
     .Acordeon-title {
         font-size: var(--font-size-lg);
+        margin-top: 4rem;
     }
 
     .Acordeon-header {

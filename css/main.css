@@ -49,7 +49,7 @@ body {
 
     list-style: none;
     gap: 2rem;
-    font-family: var(--font-medium);
+    font-family: var(--font-bold);
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
@@ -112,8 +112,8 @@ body {
     display: flex;
     transform: translateX(0);
     background-color: white;
-    opacity: 80%;
-    font-size: var(--font-size-lg);
+    opacity: 90%;
+    font-size: var(--font-size-md);
     list-style: none;
 
 }
@@ -121,7 +121,7 @@ body {
 .Nav-menuLinks li a {
     text-decoration: none;
     color: var(--color-text-primary);
-    font-family: var(--font-regular);
+    font-family: var(--font-bold);
 }
 
 
@@ -243,7 +243,7 @@ body {
     }
 
     .fa-brands, .fab{
-        margin-right: 50px;
+        margin-right: 0px;
     }
 
     /* cambia la lista del footer a fila */

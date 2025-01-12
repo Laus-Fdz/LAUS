@@ -54,6 +54,10 @@
     
 }
 
+.Input:focus {
+    border-color: var(--color-emphasis);
+    outline: none;
+}
 
 .Div-checkbox {
     display: flex;

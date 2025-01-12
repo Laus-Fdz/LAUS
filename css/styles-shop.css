@@ -3,7 +3,7 @@
 .Tabs-buttons {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .Tabs-button {
@@ -69,13 +69,13 @@
 
 .Catalog-title {
     font-family: var(--font-bold);
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-md);
     color: var(--color-primary);
 }
 
 .Catalog-price {
     font-family: var(--font-regular);
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
     color: var(--color-primary);
     margin: 0.5rem 0;
 }

@@ -10,7 +10,7 @@
 .Checkout-title {
     font-size: var(--font-size-lg);
     font-weight: bold;
-    font-family: var(--font-regular);
+    font-family: var(--font-bold);
 
     color: var(--color-primary);
     margin-bottom: 20px;
@@ -94,6 +94,7 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
+
     border: 1px solid black;
     border-radius: 8px;
     font-size: var(--font-size-sm);
@@ -111,6 +112,7 @@
     width: 100%;
     padding: 12px;
     font-size: var(--font-size-sm);
+    font-family: var(--font-medium);
 
     text-align: center;
     background-color: var(--bg-color-dark);
@@ -138,6 +140,8 @@
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 15px;
+
+    margin-bottom: 50px;
 }
 
 .Checkout-payment-label {
@@ -169,7 +173,8 @@
     width: 100%;
     padding: 12px;
     font-size: var(--font-size-sm);
-    font-weight: bold;
+    font-family: var(--font-medium);
+   
     text-align: center;
     background-color: var(--bg-color-dark);
     color: var(--color-text-light);

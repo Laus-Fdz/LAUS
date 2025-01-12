@@ -4,7 +4,7 @@
 
 .Cart-title {
     text-align: center;
-    font-family: var(--font-regular);
+    font-family: var(--font-bold);
     font-size: var(--font-size-lg);
     margin-bottom: 1rem;
     color: var(--color-primary);
@@ -68,7 +68,7 @@
 }
 
 .Cart-total-title, .Cart-total-price {
-    font-family: var(--font-regular);
+    font-family: var(--font-bold);
     font-weight: bold;
     color: var(--color-primary);
     font-size: var(--font-size-md);
@@ -105,6 +105,7 @@
     background-color: var(--color-primary);
     color: var(--color-text-light);
     font-size: var(--font-size-sm);
+    font-family: var(--font-medium);
     border: none;
     border-radius: 8px;
     cursor: pointer;
