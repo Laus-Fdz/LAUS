@@ -51,7 +51,7 @@
 }
 
 .Acordeon-title {
-    font-family: var(--font-regular);
+    font-family: var(--font-bold);
     text-align: center;
     padding: 1rem;
     color: var(--color-text-dark);
@@ -69,7 +69,7 @@
     font-size: var(--font-size-sm);
     color: var(--color-text-light);
     transition: background-color 0.3s ease;
-    font-family: var(--font-regular);
+    font-family: var(--font-medium);
 }
 
 .Acordeon-header:hover {

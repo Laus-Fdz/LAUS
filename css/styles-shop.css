@@ -68,7 +68,7 @@
 }
 
 .Catalog-title {
-    font-family: var(--font-regular);
+    font-family: var(--font-bold);
     font-size: var(--font-size-lg);
     color: var(--color-primary);
 }
@@ -83,7 +83,7 @@
 .Catalog-button {
     background-color: var(--color-primary);
     color: var(--color-text-light);
-    font-family: var(--font-regular);
+    font-family: var(--font-medium);
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;

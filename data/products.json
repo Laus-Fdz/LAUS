@@ -2,10 +2,10 @@
     {
         "id": 1,
         "name": "The Girl in Grey",
-        "description": "Impresión digital en papel mate de alta calidad de 300g. Tamaño A4 (21x29,7cm) o A3 (29,7x42cm). La chica de Gris es una ilustración digital de una chica con un fondo gris. Ideal para decorar cualquier rincón de tu hogar, caracterizada por un contraste de luces y sombras, fondo minimalista que resalta la expresividad de la mirada, con toques dorados que aportan un contraste moderno y elegante a la composición. Se envía sin marco. Todas las imágenes están protegidas por derechos de la autora y no se pueden reproducir sin permiso.",
+        "description": "Impresión digital en papel mate de alta calidad de 300g.\nTamaño A4 (21x29,7cm) o A3 (29,7x42cm).\n\nLa chica de Gris es una ilustración digital de una chica con un fondo gris. Ideal para decorar cualquier rincón de tu hogar, caracterizada por un contraste de luces y sombras, fondo minimalista que resalta la expresividad de la mirada, con toques dorados que aportan un contraste moderno y elegante a la composición.\n\nSe envía sin marco.\n\nTodas las imágenes están protegidas por derechos de la autora y no se pueden reproducir sin permiso.",
         "price": {
-            "A4": 20,
-            "A3": 35
+        "A4": 20,
+        "A3": 35
         },
         "sizes": [
             "A4", "A3"
@@ -15,9 +15,9 @@
         "category": "print",
         "gallery": [
             "./assets/img/prints/chica-gris-cuadro.jpg",
-            "./assets/img/prints/la-chica-de-gris-mockup.jpg",
-            "./assets/img/prints/la-chica-de-gris-mockup2.jpg",
-            "./assets/img/prints/chica-gris.jpg"
+            "./assets/img/prints/la-chica-de-gris-mockup.png",
+            "./assets/img/prints/la-chica-de-gris-mockup2.png",
+            "./assets/img/prints/chica-gris.jpeg"
         ]
     },
     {
@@ -35,7 +35,7 @@
         "category": "print",
         "gallery": [
             "./assets/img/prints/chica-gris-cuadro.jpg",
-            "./assets/img/prints/chica-gris-cuadro-2.jpg",
+            "./assets/img/prints/chica-gris-cuadro-2.png",
             "./assets/img/prints/chica-gris-cuadro-3.jpg"
         ]
     },

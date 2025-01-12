@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0; /* Elimina cualquier margen por defecto del navegador */
+    background-color: var(--bg-color);
 }
 
 .Main { 
@@ -34,6 +35,7 @@ body {
 .Logo {
     width: 100px;
     height: auto;
+    margin-left: 40px;
 }
 
 /* Enlaces de navegación - menu para desktop */
@@ -48,7 +50,8 @@ body {
 
     list-style: none;
     gap: 2rem;
-    font-family: var(--font-regular);
+    font-family: var(--font-medium);
+    letter-spacing: 0.1em;
     text-transform: uppercase;
 }
 

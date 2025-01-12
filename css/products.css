@@ -88,7 +88,8 @@
 
 .Product-button {
     padding: 1rem;
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
+    font-family: var(--font-medium);
     background-color: var(--bg-color-dark);
     color: var(--color-text-light);
     border: none;
@@ -122,7 +123,7 @@
 
 .Related-subTitle {
     font-size: var(--font-size-md);
-    font-family: var(--font-regular);
+    font-family: var(--font-bold);
     color: var(--color-text-dark);
     text-align: center;
 }

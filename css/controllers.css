@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'MyCustomFontMedium';
+    src: url('../assets/font/Kalnia-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyCustomFontBold';
+    src: url('../assets/font/Kalnia-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyCustomFontLight';
+    src: url('../assets/font/Kalnia-Light.ttf') format('truetype');
+    font-weight: light;
+    font-style: normal;
+}
+
 /* Variables globales */
 
 :root {
@@ -11,13 +30,16 @@
     --color-primary: #333333;
     --color-secondary: #C6C6C6;
     --color-text: #333333;
-    --bg-color: white;
+    --bg-color: #F2F1ED;
     --bg-color-dark: #333;
-    --color-emphasis: #F9DF22   ;
+    --color-emphasis: #FFEE88 ;
 
     /* tipografías */
+
     --font-regular: helvetica;
-    --font-bold: helvetica;
+    --font-medium: 'MyCustomFontMedium';
+    --font-bold: 'MyCustomFontBold';
+    --font-light: 'MyCustomFontLight';
 
     /* Tamaños de fuente */
     --font-size-xs: 0.75em;
