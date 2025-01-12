@@ -198,6 +198,12 @@
     .Product-container {
         gap: 3rem;
         margin: 0 3rem;
+        padding: 2rem;
+    }
+
+    .Product-info {
+        margin-top: 6rem;
+    padding-right: 4rem;
     }
 
     .Product-img img {

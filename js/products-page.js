@@ -104,7 +104,7 @@ function loadRelatedProducts(products, currentProductID) {
     // Mostrar productos relacionados (cargarlos del HTML)
     relatedProducts.forEach(product => {
         const item = document.createElement("a"); // se crea un enlace para cada producto relacionado
-        item.href = `./prints.html?id=${product.id}`; // se establece su enlace
+        item.href = `./productos.html?id=${product.id}`; // se establece su enlace
         item.classList.add("Related-item"); 
 
         // se añade la información del producto relacionado

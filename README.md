@@ -26,5 +26,9 @@ Diseñadora y Desarrolladora: Laura Fernández Solano
 - JSON: Almacenamiento de datos de productos
 - Font Awesome: Iconos para mejorar la interfaz de usuario
 
+## Metodología
+
+SuitCSS
+
 
 

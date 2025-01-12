@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "The Girl in Grey",
-        "description": "Impresión digital en papel mate de alta calidad de 300g.\nTamaño A4 (21x29,7cm) o A3 (29,7x42cm).\n\nLa chica de Gris es una ilustración digital de una chica con un fondo gris. Ideal para decorar cualquier rincón de tu hogar, caracterizada por un contraste de luces y sombras, fondo minimalista que resalta la expresividad de la mirada, con toques dorados que aportan un contraste moderno y elegante a la composición.\n\nSe envía sin marco.\n\nTodas las imágenes están protegidas por derechos de la autora y no se pueden reproducir sin permiso.",
+        "description": "Prints en impresión digital sobre papel mate de alta calidad de 300g. Tamaño A4 (21x29,7 cm) o o A3 (29,7x42cm). Cada impresión es firmada. SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
         "price": {
         "A4": 20,
         "A3": 35
@@ -23,13 +23,13 @@
     {
         "id": 2,
         "name": "Behind Blue Eyes",
-        "description": "lorem ipsum",
+        "description": "Prints en impresión digital sobre papel mate de alta calidad de 300g. Formato cuadrado, tamaño 15x15cm o 20x20cm. Cada impresión es firmada. SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
         "price": {
-            "A4": 20,
-            "A3": 35
+            "15x15": 20,
+            "20x20": 35
         },
         "sizes": [
-            "A4", "A3"
+            "15x15", "20x20"
         ], 
         "image": "./assets/img/prints/behind-blue-eyes.png",
         "category": "print",
@@ -42,7 +42,7 @@
     {
         "id": 3,
         "name": "Billie Eilish",
-        "description": "lorem ipsum",
+        "description": "Prints en impresión digital sobre papel mate de alta calidad de 300g. Tamaño A4 (21x29,7 cm) o o A3 (29,7x42cm). Cada impresión es firmada. SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
         "price": {
             "A4": 20,
             "A3": 35
@@ -61,7 +61,7 @@
     {
         "id": 4,
         "name": "Chris Martin",
-        "description": "lorem ipsum",
+        "description": "Prints en impresión digital sobre papel mate de alta calidad de 300g. Tamaño A4 (21x29,7 cm) o o A3 (29,7x42cm). Cada impresión es firmada. SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
         "price": {
             "A4": 20,
             "A3": 35
@@ -80,7 +80,7 @@
     {
         "id": 5,
         "name": "Penguins love",
-        "description": "lorem ipsum",
+        "description": "Prints en impresión digital sobre papel mate de alta calidad de 300g. Tamaño A4 (21x29,7 cm) o o A3 (29,7x42cm). Cada impresión es firmada. SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
         "price": {
             "A4": 20,
             "A3": 35
@@ -118,7 +118,7 @@
     {
         "id": 7,
         "name": "Jinx - Arcane",
-        "description": "lorem ipsum",
+        "description": "Ilustración original realizada sobre papel de alta calidad de 300g. Tamaño A4 (21x29,7 cm). SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
         "price": {
             "A4": 150
         },
@@ -136,7 +136,7 @@
     {
         "id": 8,
         "name": "Tomas Shelby",
-        "description": "lorem ipsum",
+        "description": "Ilustración original realizada a tinta china y bolígrafo sobre papel de alta calidad de 300g. Tamaño A4 (21x29,7 cm). SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
         "price": {
             "A4": 95
         },
@@ -154,7 +154,7 @@
     {
         "id": 9,
         "name": "The Fear",
-        "description": "lorem ipsum",
+        "description": "Ilustración original realizada en acuarela sobre papel de alta calidad. Tamaño A5 (14,8x21 cm). SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
         "price": {
             "A5": 120
         },
@@ -172,7 +172,7 @@
     {
         "id": 10,
         "name": "Bloody Hand",
-        "description": "lorem ipsum",
+        "description": "Ilustración original realizada en acuarela sobre papel de alta calidad. Tamaño A5 (14,8x21 cm). SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
         "price": {
             "A5": 110
         },
@@ -190,17 +190,17 @@
     {
         "id": 11,
         "name": "Jane's History",
-        "description": "lorem ipsum",
+        "description": "Ilustración original realizada en tinta china y boli sobre papel de alta calidad. Tamaño A5 (14,8x21 cm). SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
         "price": {
             "A5": 60
         },
         "sizes": [
             "A5"
         ], 
-        "image": "./assets/img/originales/jane-history-original.png",
+        "image": "./assets/img/originales/jane-history.png",
         "category": "Originales",
         "gallery": [
-            "./assets/img/originales/jane-history-original.png",
+            "./assets/img/originales/jane-history.png",
             "./assets/img/originales/jane-history-original2.png",
             "./assets/img/originales/jane-history-original3.png"
         ]
@@ -208,7 +208,7 @@
     {
         "id": 12,
         "name": "Ellie The Last Of Us",
-        "description": "lorem ipsum",
+        "description": "Ilustración original realizada en acuarela sobre papel de alta calidad. Tamaño A4 (21x29,7 cm). SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
         "price": {
             "A4": 75
         },
