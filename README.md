@@ -3,7 +3,6 @@
 Diseñadora y Desarrolladora: Laura Fernández Solano
 
 ## LAUS | Tienda de prints e ilustraciones
-![Logo de LAUS] (./assets/img/laus.draw.png)
 
 ## Descripción General
 
@@ -17,9 +16,9 @@ Diseñadora y Desarrolladora: Laura Fernández Solano
 
 ## Tipografía utilizada
 
-Logotipo y títulos : Kalnia Semibold
-Botones: Kalnia Medium
-Cuerpo de texto: Helvetica regular
+- Logotipo y títulos : Kalnia Semibold
+- Botones: Kalnia Medium
+- Cuerpo de texto: Helvetica regular
 
 
 ## Herramientas usadas
