@@ -103,6 +103,9 @@ function loadRelatedProducts(products, currentProductID) {
 
     // Mostrar productos relacionados (cargarlos del HTML)
     relatedProducts.forEach(product => {
+        const firstSize = product.sizes[0]; // obtener el primer tamaño disponible del producto como determinado
+        const price = product.price[firstSize]; // Obtener el precio para ese tamaño
+
         const item = document.createElement("a"); // se crea un enlace para cada producto relacionado
         item.href = `./productos.html?id=${product.id}`; // se establece su enlace
         item.classList.add("Related-item"); 
@@ -111,7 +114,7 @@ function loadRelatedProducts(products, currentProductID) {
         item.innerHTML = `
                 <img src="${product.image}" alt="${product.name}">
                 <h3 class="Related-subTitle">${product.name}</h3>
-                <p class="Related-description">€${product.price}</p>
+                <p class="Related-description">${price}€</p>
         `;
 
         // se inserta el enlace dentro del contenedor de productos relacionados
