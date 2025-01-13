@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
 }
 
 /* imágenes del producto */
@@ -191,6 +192,7 @@
         flex-direction: row;
         gap: 2rem;
         padding: 0 2rem;
+        margin: 0 auto;
     }
 
     .Related-items img {
@@ -202,8 +204,9 @@
 @media (min-width: 1024px) {
     .Product-container {
         gap: 3rem;
-        margin: 0 3rem;
+        margin: 0 auto;
         padding: 2rem;
+        
     }
 
     .Product-info {
@@ -223,6 +226,9 @@
 
     .Related-items {
         padding: 0 3rem;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .Related-items img {
