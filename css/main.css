@@ -19,6 +19,7 @@
 .Header {
     background-color: var(--bg-color);
     padding: 1rem;
+    border-bottom: 1px solid var(--color-primary);
     position: sticky; /* Fija el menú */
     top: 0; /* Lo coloca al principio */
     z-index: 1; /* Asegura que esté por encima de otros elementos */
