@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAUS | Pasarela de pago</title>
 
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/controllers.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/checkout.css">
 
-    <!-- Iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!-- Scripts -->
+    <script src="./js/menu.js" defer></script>
+    <script src="./js/checkout.js" defer></script>
 
 
 </head>
@@ -25,7 +29,7 @@
 
             <!-- logotipo -->
             <a href="./index.html">
-                <img class="Logo" src="./assets/img/lau-draws.png" alt="">
+                <img class="Logo" src="./assets/img/lau-draws.png" alt="Logotipo Laus Draws">
             </a>
 
             <!-- Enlaces de navegación para desktop -->
@@ -38,9 +42,8 @@
 
             <!-- Contenedor para el carrito y menu móvil -->
             <div class="Nav-shop" aria-label="Carrito">
-                <a href="./carrito.html">
-                    <button class="Nav-icon fa-solid fa-cart-shopping" aria-label="Carrito"></button>
-                </a>
+                <a href="./carrito.html" class="Nav-icon fa-solid fa-cart-shopping" aria-label="Carrito"></a>
+
                 <a class="Nav-icon fab fa-instagram" href="https://www.instagram.com/itslauss/" target="_blank"></a>
 
 
@@ -85,20 +88,24 @@
                     <form id="addressForm">
                         <div class="Form-group">
                             <label class="Form-group-label" for="name">Nombre Completo</label>
-                            <input class="Form-group-input" type="text" id="name" name="name" placeholder="Tu nombre" required>
-
-                            <label class="Form-group-label" for="address">Dirección</label>
-                            <input class="Form-group-input" type="text" id="address" name="address" placeholder="Calle, número, piso..."
+                            <input class="Form-group-input" type="text" id="name" name="name" placeholder="Tu nombre"
                                 required>
 
-                            <label class="Form-group-label"  for="city">Ciudad</label>
-                            <input class="Form-group-input" type="text" id="city" name="city" placeholder="Tu ciudad" required>
+                            <label class="Form-group-label" for="address">Dirección</label>
+                            <input class="Form-group-input" type="text" id="address" name="address"
+                                placeholder="Calle, número, piso..." required>
 
-                            <label class="Form-group-label"  for="state">Provincia</label>
-                            <input class="Form-group-input" type="text" id="state" name="state" placeholder="Tu provincia" required>
+                            <label class="Form-group-label" for="city">Ciudad</label>
+                            <input class="Form-group-input" type="text" id="city" name="city" placeholder="Tu ciudad"
+                                required>
 
-                            <label class="Form-group-label"  for="zip">Código postal</label>
-                            <input class="Form-group-input" type="text" id="zip" name="zip" placeholder="Tu código postal" required>
+                            <label class="Form-group-label" for="state">Provincia</label>
+                            <input class="Form-group-input" type="text" id="state" name="state"
+                                placeholder="Tu provincia" required>
+
+                            <label class="Form-group-label" for="zip">Código postal</label>
+                            <input class="Form-group-input" type="text" id="zip" name="zip"
+                                placeholder="Tu código postal" required>
 
                         </div>
                         <button type="submit" class="Form-submit">Guardar dirección</button>
@@ -112,19 +119,23 @@
                     <h2 class="Checkout-subtitle">Información de pago</h2>
                     <form id="paymentForm">
                         <label class="Checkout-payment-label" for="name">Nombre Completo</label>
-                        <input class="Checkout-payment-input" type="text" id="name" placeholder="Nombre y apellidos" required>
+                        <input class="Checkout-payment-input" type="text" id="name" placeholder="Nombre y apellidos"
+                            required>
 
                         <label class="Checkout-payment-label" for="email">Correo Electrónico</label>
-                        <input class="Checkout-payment-input" type="email" id="email" placeholder="ejemplo@email.com" required>
+                        <input class="Checkout-payment-input" type="email" id="email" placeholder="ejemplo@email.com"
+                            required>
 
                         <label class="Checkout-payment-label" for="cardNumber">Número de Tarjeta</label>
-                        <input class="Checkout-payment-input" type="text" id="cardNumber" maxlength="16" placeholder="xxx-xxx-xxx-xxx" required>
+                        <input class="Checkout-payment-input" type="text" id="cardNumber" maxlength="16"
+                            placeholder="xxx-xxx-xxx-xxx" required>
 
                         <label class="Checkout-payment-label" for="expiryDate">Fecha de Expiración</label>
                         <input class="Checkout-payment-input" type="text" id="expiryDate" placeholder="MM/AA" required>
 
                         <label class="Checkout-payment-label" for="cvv">CVV</label>
-                        <input class="Checkout-payment-input" type="text" id="cvv" maxlength="3" placeholder="xxx" required>
+                        <input class="Checkout-payment-input" type="text" id="cvv" maxlength="3" placeholder="xxx"
+                            required>
 
                         <button type="submit" class="Checkout-submit">Pagar</button>
 
@@ -146,15 +157,14 @@
         <div class="Footer-content">
             <ul class="Footer-list">
                 <li class="Footer-listItem"><a href="./aviso-legal.html" class="Footer-link">Aviso Legal</a></li>
-                <li class="Footer-listItem"><a href="./politica-privacidad.html" class="Footer-link">Política de Privacidad</a></li>
+                <li class="Footer-listItem"><a href="./politica-privacidad.html" class="Footer-link">Política de
+                        Privacidad</a></li>
                 <li class="Footer-listItem"><a href="./cookies.html" class="Footer-link">Política de Cookies</a></li>
             </ul>
             <p class="Footer-credits">© 2024 All rights reserved to LAUS.</p>
         </div>
     </footer>
 
-    <script src="./js/menu.js"></script>
-    <script src="./js/checkout.js" defer></script>
 
 </body>
 

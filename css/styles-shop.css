@@ -77,7 +77,7 @@
     font-family: var(--font-regular);
     font-size: var(--font-size-sm);
     color: var(--color-primary);
-    margin: 0.5rem 0;
+    margin-bottom: 1rem;
 }
 
 .Catalog-button {
@@ -85,12 +85,14 @@
     color: var(--color-text-light);
     font-family: var(--font-medium);
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
+
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 8px;
     font-weight: bold;
 
     transition: background-color 0.3s ease;
+    text-decoration: none;
 }
 
 .Catalog-button:hover {

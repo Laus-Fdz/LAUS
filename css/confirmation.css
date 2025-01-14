@@ -1,6 +1,10 @@
 .Main {
     width: 100%;
-    max-width: 600px;
+    height: 100vh;
+    max-width: 0 auto;
+    display: flex;
+    justify-self: center;
+    align-items: center;
     padding: 20px;
     text-align: center;
 }
@@ -32,6 +36,8 @@
     font-size: var(--font-size-sm);
     font-family: var(--font-regular);
     transition: background-color 0.3s ease;
+
+    text-decoration: none;
 }
 
 .Confirmacion-button:hover {
@@ -39,4 +45,22 @@
     color: var(--color-text-dark);
     font-weight: bold;
     cursor: pointer;
+}
+
+/* Responsive tablet */
+@media (min-width: 768px) {
+    .Main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (min-width: 1025px) {
+    .Main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

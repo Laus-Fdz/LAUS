@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAUS | Confirmación de compra</title>
 
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/controllers.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/confirmation.css">
 
-    <!-- Iconos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <!-- Scripts -->
+    <script src="./js/menu.js" defer></script>
 
 
 </head>
@@ -25,7 +28,7 @@
 
             <!-- logotipo -->
             <a href="./index.html">
-                <img class="Logo" src="./assets/img/lau-draws.png" alt="">
+                <img class="Logo" src="./assets/img/lau-draws.png" alt="Logotipo Laus Draws">
             </a>
 
             <!-- Enlaces de navegación para desktop -->
@@ -38,12 +41,9 @@
 
             <!-- Contenedor para el carrito y menu móvil -->
             <div class="Nav-shop" aria-label="Carrito">
-                <a href="./carrito.html">
-                    <button class="Nav-icon fa-solid fa-cart-shopping" aria-label="Carrito"></button>
-                </a>
+                <a href="./carrito.html" class="Nav-icon fa-solid fa-cart-shopping" aria-label="Carrito"></a>
+
                 <a class="Nav-icon fab fa-instagram" href="https://www.instagram.com/itslauss/" target="_blank"></a>
-
-
 
                 <!-- Botón para el menú móvil -->
                 <div class="Nav-menuMobile">
@@ -68,36 +68,27 @@
         <section class="Confirmation">
             <h2 class="Confirmation-title">!Gracias por tu compra!</h2>
             <p class="Confirmation-text"> Tu pedido ha sido procesado correctamente. Recibirás un correo con todos los detalles. </p>
-            <a href="./tienda.html">
-                <button class="Confirmacion-button">Volver a la tienda </button>
-            </a>
-            
+
+            <a href="./tienda.html" class="Confirmacion-button">Volver a la tienda</a>
+
         </section>
 
 
     </main>
 
 
-
-
-
-
-
-
-
     <!-- Footer -->
     <footer class="Footer">
-        <div class="Footer-content">
+        <nav class="Footer-content">
             <ul class="Footer-list">
                 <li class="Footer-listItem"><a href="./aviso-legal.html" class="Footer-link">Aviso Legal</a></li>
                 <li class="Footer-listItem"><a href="./politica-privacidad.html" class="Footer-link">Política de Privacidad</a></li>
                 <li class="Footer-listItem"><a href="./cookies.html" class="Footer-link">Política de Cookies</a></li>
             </ul>
             <p class="Footer-credits">© 2024 All rights reserved to LAUS.</p>
-        </div>
+        </nav>
     </footer>
 
-    <script src="./js/menu.js"></script>
 
 </body>
 
