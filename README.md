@@ -1,6 +1,7 @@
 # Proyecto Final | Diseño Web con HTML5, CSS3 y JS
 
 Diseñadora y Desarrolladora: Laura Fernández Solano
+https://laus-fdz.github.io/laus-tienda-online/
 
 ## LAUS | Tienda de prints e ilustraciones
 

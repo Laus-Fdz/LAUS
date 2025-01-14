@@ -3,7 +3,7 @@
 // ----------------------------------------------------
 
 // -----------------------------------------------------------
-// 1. Referencias al DOM
+// 1. Crear variables y constantes 
 // -----------------------------------------------------------
 const checkoutItemsContainer = document.querySelector(".Checkout-items");
 const checkoutTotalPrice = document.querySelector(".Checkout-total-price");
