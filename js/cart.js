@@ -14,6 +14,8 @@ const cartTotalPrice = document.querySelector(".Cart-total-price"); // precio to
 // 2. EventListener y Funciones
 // -----------------------------------------------------------
 
+
+
 // EventListener para botón "Añadir al carrito"
 document.addEventListener("DOMContentLoaded", () => { // DOMContentLoaded: evento que se dispara cuando el documento HTML ha sido completamente cargado y parseado, PARA EVITAR QUE SE EJECUTE EL CÓDIGO ANTES DE QUE SE CARGUE EL DOM.
     const addToCartButton = document.querySelector(".Product-button"); // Botón "Añadir al carrito"
@@ -64,6 +66,9 @@ function addToCart(product) {
 
 // Cargar los productos del carrito
 function loadCart() {
+
+    if(!cartItemsContainer || !cartTotalPrice) return;
+
     const cart = JSON.parse(localStorage.getItem("cart")) || []; // Obtener productos del carrito
     cartItemsContainer.innerHTML = ""; // Limpiar el contenedor
     let total = 0;
@@ -158,11 +163,24 @@ function removeFromCart(productID) {
 
 
 // Agregar evento al botón de comprar
-document.getElementById("proceedToCheckout").addEventListener("click", () => {
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    if (cart.length === 0) {
-        alert("El carrito está vacío")
-    } else {
-        window.location.href = "./pasarela-pago.html";
-    }
-});
+// Busca en el html el id "proceedToCheckout"
+const checkoutButton = document.getElementById("proceedToCheckout");
+// Verifica si el botón existe
+if (checkoutButton) { 
+    // Añade un evento de click
+    checkoutButton.addEventListener("click", () => {
+        // Obtiene el carrito del localStorage
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        // varifica si el carrito está vacío
+        if (cart.length === 0) {
+            alert("El carrito está vacío")
+        } else {
+            // si no está vacío redirecciona a la página de pago
+            window.location.href = "./pasarela-pago.html";
+        }
+    });
+}
+
+// -----------------------------------------------------------
+// 3. Iniciamos el código
+// -----------------------------------------------------------

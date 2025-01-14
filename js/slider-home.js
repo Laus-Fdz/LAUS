@@ -27,7 +27,6 @@ function nextImage() {
         currentImageIndex = 0; // Vuelve a la primera imagen si es el final
     }
     actualizarSlider();
-    actualizarContador();
 }
 
 // Retrocede a la imagen anterior
@@ -37,7 +36,6 @@ function prevImage() {
         currentImageIndex = images.length - 1; // Vuelve a la última imagen si es el principio
     }
     actualizarSlider();
-    actualizarContador();
 }
 
 // Actualiza el desplazamiento del slider
@@ -45,16 +43,6 @@ function actualizarSlider() {
     const width = window.innerWidth; // Ancho dinámico del viewport del navegador
     sliderImages.style.transform = `translateX(${-width * currentImageIndex}px)`; // Mueve el slider
 }
-
-
-// -----------------------------------------------------------
-// 3. Ejecutamos nuestro código
-// -----------------------------------------------------------
-
-
-// -----------------------------------------------------------
-// 4. Funcionalidad de intervalo automático
-// -----------------------------------------------------------
 
 // Intervalo para avanzar automáticamente cada 3 segundos
 let intervalos;
@@ -71,5 +59,14 @@ sliderImages.addEventListener('mouseover', () => {
 sliderImages.addEventListener('mouseout', () => {
     agregarIntervalo(); // Reanuda el intervalo
 });
+
+
+
+// -----------------------------------------------------------
+// 3. Ejecutamos nuestro código
+// -----------------------------------------------------------
+
 agregarIntervalo();
+
+
 

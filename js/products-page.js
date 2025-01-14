@@ -2,6 +2,11 @@
 //                 CARGA DINÁMICA DE PRODUCTOS
 // ----------------------------------------------------
 
+// ----------------------------------------------------
+//  1. Creamos constantes y variables
+// ----------------------------------------------------
+
+
 // Cargar archivos JSON (archivo que contiene la información de los productos)
 const productsJSON = './data/products.json';
 
@@ -18,6 +23,11 @@ const relatedItemsContainer = document.querySelector(".Related-items");
 
 // para seleccionar tamaños
 const sizeSelect = document.querySelector(".Product-size-select");
+
+
+// ----------------------------------------------------
+//  2. Funciones y EventListeners
+// ----------------------------------------------------
 
 
 // Función para cargar los productos de JSON de forma asíncrona
@@ -121,6 +131,10 @@ function loadRelatedProducts(products, currentProductID) {
         relatedItemsContainer.appendChild(item);
     });
 }
+
+// ----------------------------------------------------
+//  3. Iniciamos nuestro código
+// ----------------------------------------------------
 
 // Iniciamos nuestra carga dinámica al abrir la página
 loadProductsData();
