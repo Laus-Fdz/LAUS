@@ -1,3 +1,5 @@
+/* Aquí se encuentra sólo el css en este caso del slider de la home  */
+
 /* Galería */
 .Gallery {
     position: relative;
@@ -8,6 +10,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 .Gallery-slider {
@@ -17,6 +20,7 @@
     position: relative; /* Asegura que no haya desplazamiento horizontal no deseado */
     flex-direction: row; /* Apilamos las imágenes horizontalmente */
     flex-wrap: nowrap; /* Impide que las imágenes se desborden */
+    
 }
 
 .Gallery-image {
@@ -47,7 +51,7 @@
     right: 20px;
 }
 
-/* Media Query para Tablets y Desktop */
+/* Responsive para Tablets y Desktop */
 @media (max-width: 1024px) {
     .Gallery {
         height: 100vh; /* Mantener altura completa del viewport */
@@ -71,7 +75,7 @@
     }
 }
 
-/* Media Query para Desktop */
+/* Responsive para Desktop */
 @media (min-width: 1025px) {
     .Gallery {
         height: 100vh; /* Mantener altura completa del viewport */

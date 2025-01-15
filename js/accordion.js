@@ -2,12 +2,16 @@
 //                 ACORDEÓN ABOUT ME
 // ----------------------------------------------------
 
-// 1. Declarar variables y constantes
+// ----------------------------------------------------
+//  1. Creamos constantes y variables
+// ----------------------------------------------------
 const headers = document.querySelectorAll(".Acordeon-header");  
 const items = document.querySelectorAll(".Acordeon-item");      
 
 
-// 2. Crear funciones y listeners
+// ----------------------------------------------------
+//  2. Eventlistener y funciones
+// ----------------------------------------------------
 headers.forEach( header => {
     header.addEventListener("click", () => {  
         const item = header.closest(".Acordeon-item");
@@ -22,5 +26,7 @@ headers.forEach( header => {
     });
 });
 
-// 3. Ejecutar el programa (esto lo hace al inicio de la ejecución)
+// -----------------------------------------------------------
+// 3. Iniciamos el código
+// -----------------------------------------------------------
 headers[0].click();

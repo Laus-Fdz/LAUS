@@ -47,7 +47,7 @@
     cursor: pointer;
 }
 
-/* Responsive tablet */
+/* Responsive para tablet */
 @media (min-width: 768px) {
     .Main {
         display: flex;

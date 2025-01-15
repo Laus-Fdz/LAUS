@@ -54,6 +54,7 @@
     
 }
 
+/* El color que se ve al seleccionar cada input (cada apartado) del formulario */
 .Input:focus {
     border-color: var(--color-emphasis);
     outline: none;
@@ -94,6 +95,8 @@
 .Div-form .Label a:hover {
     text-decoration:underline;
 }
+
+/* Responsive para tablet */
 
 @media (min-width: 768px) {
 

@@ -52,6 +52,8 @@
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Acordeón experiencia y estudios */
+
 .Acordeon-title {
     font-family: var(--font-bold);
     text-align: center;
@@ -104,7 +106,7 @@
 }
 
 
-/* Tablet */
+/* Responsive para Tablet */
 @media (min-width: 768px) {
     .About {
         padding: 3rem;
@@ -135,15 +137,13 @@
     }
 }
 
-/* Desktop */
+/* Responsive para Desktop */
 @media (min-width: 1024px) {
     .About {
         max-width: 1200px;
         margin: 0 auto;
         padding: 5rem;
     }
-
-    
 
     .About-container {
         gap: 2rem;

@@ -1,3 +1,5 @@
+/* Controllers es el archivo CSS donde esta el reset, las tipografías importadas y las variables que he personalizado para el proyecto */
+
 * {
     margin: 0;
     padding: 0;
@@ -50,9 +52,9 @@
     --font-size-xxl: 4em;
 
     /* colores de texto */
-    --color-text-dark: #333;
+    --color-text-dark: #1D1D1B; /* por si algún día quiero hacer la web en modo oscuro */
     --color-text-light: #ffffff;
-    --color-text-primary: #000;
+    --color-text-primary: #1D1D1B;
 }
 
 

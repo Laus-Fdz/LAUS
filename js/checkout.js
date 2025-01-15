@@ -11,8 +11,9 @@ const addressForm = document.getElementById("addressForm");
 const paymentForm = document.getElementById("paymentForm");
 
 // -----------------------------------------------------------
-// 2. Función para cargar los productos del carrito
+// 2.  Eventlistener y Funciones 
 // -----------------------------------------------------------
+// Función para cargar los productos del carrito
 function loadCheckout() {
     const cart = JSON.parse(localStorage.getItem("cart")) || []; // obtener los productos del carrito del localStorage
     checkoutItemsContainer.innerHTML = ""; // limpiar el contenedor de productos
@@ -64,7 +65,7 @@ addressForm.addEventListener("submit", (event) => {
 });
 
 // -----------------------------------------------------------
-// 4. Procesar el pago al enviar el formulario
+// 4. Procesar el pago al enviar el formulario - Ayuda de chatgpt
 // -----------------------------------------------------------
 paymentForm.addEventListener("submit", (event) => {
     event.preventDefault(); // Evitar que se recargue la página

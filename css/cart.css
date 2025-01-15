@@ -32,7 +32,7 @@
     border-radius: 8px;
     background-color: var(--bg-light);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Asegura que el producto ocupe todo el ancho disponible */
+    width: 100%; 
 
     font-family: var(--font-regular);
     font-size: var(--font-size-sm);
@@ -119,7 +119,7 @@
     font-weight: bold;
 }
 
-/* Para tablet */
+/* Responsive para tablet */
 @media (min-width: 768px) {
     .Cart {
         padding: 5rem;
@@ -154,7 +154,7 @@
     }
 }
 
-/* Para desktop */
+/* Responsive para desktop */
 @media (min-width: 1024px) {
     .Cart-container {
         flex-direction: row; /* Cambiar a fila en desktop */

@@ -6,7 +6,6 @@
 //  1. Creamos constantes y variables
 // ----------------------------------------------------
 
-
 // Cargar archivos JSON (archivo que contiene la información de los productos)
 const productsJSON = './data/products.json';
 

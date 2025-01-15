@@ -7,14 +7,11 @@
 // -----------------------------------------------------------
 const cartItemsContainer = document.querySelector(".Cart-items"); // contenedor de los productos en el carrito
 const cartTotalPrice = document.querySelector(".Cart-total-price"); // precio total del carrito
-
-
+const checkoutButton = document.getElementById("proceedToCheckout");// Busca en el html el id "proceedToCheckout"
 
 // -----------------------------------------------------------
 // 2. EventListener y Funciones
 // -----------------------------------------------------------
-
-
 
 // EventListener para botón "Añadir al carrito"
 document.addEventListener("DOMContentLoaded", () => { // DOMContentLoaded: evento que se dispara cuando el documento HTML ha sido completamente cargado y parseado, PARA EVITAR QUE SE EJECUTE EL CÓDIGO ANTES DE QUE SE CARGUE EL DOM.
@@ -25,8 +22,6 @@ document.addEventListener("DOMContentLoaded", () => { // DOMContentLoaded: event
             addToCart(product); // Agregar producto al carrito
         });
     }
-    // Cargar el carrito al cargar la página
-    loadCart();
 });
 
 
@@ -163,8 +158,6 @@ function removeFromCart(productID) {
 
 
 // Agregar evento al botón de comprar
-// Busca en el html el id "proceedToCheckout"
-const checkoutButton = document.getElementById("proceedToCheckout");
 // Verifica si el botón existe
 if (checkoutButton) { 
     // Añade un evento de click
@@ -184,3 +177,6 @@ if (checkoutButton) {
 // -----------------------------------------------------------
 // 3. Iniciamos el código
 // -----------------------------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+    loadCart(); // Cargar el carrito al iniciar la página
+});

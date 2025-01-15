@@ -189,7 +189,7 @@
     color: var(--color-text-dark);
 }
 
-/* Responsive tablet */
+/* Responsive para tablet */
 @media (min-width: 768px) {
     .Checkout-container {
         flex-direction: row;
@@ -213,7 +213,7 @@
     }
 }
 
-/* Responsive desktop */
+/* Responsive para desktop */
 @media (min-width: 1024px) {
     .Checkout-container {
         display: grid;
@@ -227,11 +227,11 @@
     }
 
     .Checkout-address {
-        grid-column: 2 / 3; /* Aparecerá en la segunda columna */
+        grid-column: 2 / 3; 
     }
 
     .Checkout-payment {
-        grid-column: 3 / 4; /* Aparecerá en la tercera columna */
+        grid-column: 3 / 4; 
     }
 
     .Form-group-input, .Checkout-payment-input {

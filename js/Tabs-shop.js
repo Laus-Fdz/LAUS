@@ -2,21 +2,25 @@
 //                 TABS DE PRODUCTOS
 // ----------------------------------------------------
 
-// Creamos constantes y variables
+// -----------------------------------------------------------
+// 1. Crear variables y constantes 
+// -----------------------------------------------------------
 const listButtons = document.querySelectorAll(".Tabs-button");
 const listPages = document.querySelectorAll(".Tabs-contenido");
 
-// Creamos funciones y eventlisteners
+// ----------------------------------------------------
+//  2. Eventlistener y funciones
+// ----------------------------------------------------
 
-listButtons.forEach(boton => {
-    boton.addEventListener("click", () => {
+listButtons.forEach(button => {
+    button.addEventListener("click", () => {
         // quitar clases de todos los tabs
         listButtons.forEach(item => item.classList.remove("u-active"));
         listPages.forEach(pagina => pagina.classList.remove("u-visible"));
 
         // Agregar clases al tab y contenido seleccionados
-        boton.classList.add("u-active");
-        const targetId = boton.dataset.tab;
+        button.classList.add("u-active");
+        const targetId = button.dataset.tab;
         const target = document.getElementById(targetId);
         target.classList.add("u-visible");
     });

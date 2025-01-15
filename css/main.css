@@ -1,3 +1,4 @@
+/* Aquí se encuentra el css general del body, el main, el header y el footer, ya que esto irá en todas las páginas */
 /* Definir el diseño general del body, para que sea flexible y ocupe toda la página */
 .Body {
     display: flex;
