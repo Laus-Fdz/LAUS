@@ -10,6 +10,10 @@
         "sizes": [
             "A4", "A3"
         ], 
+        "stock": {
+            "A4": 10,
+            "A3": 5
+        },
     
         "image": "./assets/img/prints/chica-gris-cuadro.jpg",
         "category": "print",
@@ -30,7 +34,11 @@
         },
         "sizes": [
             "15x15", "20x20"
-        ], 
+        ],
+        "stock": {
+            "15x15": 7,
+            "20x20": 10
+        }, 
         "image": "./assets/img/prints/behind-blue-eyes.png",
         "category": "print",
         "gallery": [
@@ -51,6 +59,10 @@
         "sizes": [
             "A4", "A3"
         ], 
+        "stock": {
+            "A4": 10,
+            "A3": 10
+        },
         "image": "./assets/img/prints/billie-eilish.png",
         "category": "print",
         "gallery": [
@@ -71,6 +83,10 @@
         "sizes": [
             "A4", "A3"
         ], 
+        "stock": {
+            "A4": 10,
+            "A3": 8
+        },
         "image": "./assets/img/prints/chris-martin.png",
         "category": "print",
         "gallery": [
@@ -92,6 +108,11 @@
         "sizes": [
             "A4", "A3"
         ], 
+        "stock": {
+            "15x15": 5,
+            "A4": 7,
+            "A3": 10
+        },
         "image": "./assets/img/prints/penguins.png",
         "category": "print",
         "gallery": [
@@ -104,14 +125,12 @@
     {
         "id": 6,
         "name": "Retrato personalizado",
-        "description": "lorem ipsum",
-        "price": {
-            "A4": 20,
-            "A3": 35
+        "description": "¿Te gustaría tener un retrato personalizado para ti o para regalar? Si te gustan mis proyectos y estas pensando en tener una ilustración echa a mano que capture un momento especial, no dudes en ponerte en contacto conmigo. Juntos hablaremos sobre tu idea para darle forma de manera más personalizada.",
+        "priceRange": {
+            "min": 60,
+            "max": 120
         },
-        "sizes": [
-            "A4", "A3"
-        ], 
+        "isCustom": true, 
         "image": "./assets/img/prints/retrato-familiar-personalizado.png",
         "category": "print",
         "gallery": [
@@ -131,6 +150,9 @@
         "sizes": [
             "A4"
         ], 
+        "stock": {
+            "A4": 0
+        },
         "image": "./assets/img/originales/jinx-original.png",
         "category": "Originales",
         "gallery": [
@@ -148,7 +170,10 @@
         },
         "sizes": [
             "A4"
-        ], 
+        ],
+        "stock": {
+            "A4": 1
+        }, 
         "image": "./assets/img/originales/tomas-shelby-original.png",
         "category": "Originales",
         "gallery": [
@@ -166,7 +191,10 @@
         },
         "sizes": [
             "A5"
-        ], 
+        ],
+        "stock": {
+            "A4": 1
+        }, 
         "image": "./assets/img/originales/the-fear-original.png",
         "category": "Originales",
         "gallery": [
@@ -184,7 +212,10 @@
         },
         "sizes": [
             "A5"
-        ], 
+        ],
+        "stock": {
+            "A4": 1
+        }, 
         "image": "./assets/img/originales/bloody-hand-original.png",
         "category": "Originales",
         "gallery": [
@@ -202,7 +233,10 @@
         },
         "sizes": [
             "A5"
-        ], 
+        ],
+        "stock": {
+            "A4": 1
+        }, 
         "image": "./assets/img/originales/jane-history.png",
         "category": "Originales",
         "gallery": [
@@ -221,6 +255,9 @@
         "sizes": [
             "A4"
         ], 
+        "stock": {
+            "A4": 1
+        },
         "image": "./assets/img/originales/ellie-original.png",
         "category": "Originales",
         "gallery": [

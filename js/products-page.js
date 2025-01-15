@@ -44,19 +44,48 @@ async function loadProductsData() {
 
         // Actualizar el contenido del producto en el HTML
         productTitle.textContent = currentProduct.name;
-        productDescription.textContent = `${currentProduct.name}, ${currentProduct.description}`;
-        productPrice.textContent = `${currentProduct.price[currentProduct.sizes[0]]}€`;
         productImg.src = currentProduct.image;
         productImg.alt = currentProduct.name;
 
-        // Configurar las opciones de tamaño
-        sizeSelect.innerHTML = ""; // limpiar las opciones actuales
-        currentProduct.sizes.forEach(size => {
-            const option = document.createElement("option");
-            option.value = size;
-            option.textContent = size;
-            sizeSelect.appendChild(option);
-        });
+        // Comprobar si es un producto personalizado (isCustom lo he añadido al producto personalizado que no quiero que siga la logica de todos los demás JSON)
+        if (currentProduct.isCustom) {
+            productDescription.textContent = currentProduct.description;
+            productPrice.textContent = `${currentProduct.priceRange.min}€ - ${currentProduct.priceRange.max}€`;
+
+            // Ocultar selector de tamaños
+            const sizeContainer = document.querySelector(".Product-sizes");
+            sizeContainer.style.display = "none";
+
+            // Cambiar el botón
+            const addToCartButton = document.querySelector(".Product-button");
+            addToCartButton.textContent = "Contactar";
+
+            // agregamos un evento de click que redirije al formulario de contacto
+            addToCartButton.addEventListener("click", () => {
+                window.location.href = "./contacto.html";
+            });
+        } else {
+
+            // comportamiento normal para productos estándar
+            productDescription.textContent = `${currentProduct.name},${currentProduct.description}`;
+            productPrice.textContent = `${currentProduct.price[currentProduct.sizes[0]]}€`;
+
+            // Configurar las opciones de tamaño
+            sizeSelect.innerHTML = ""; // limpiar las opciones actuales
+            currentProduct.sizes.forEach(size => {
+                const option = document.createElement("option");
+                option.value = size;
+                option.textContent = size;
+                sizeSelect.appendChild(option);
+            });
+
+            // Excluir productos personalizados al mostrar el stock
+            if (!currentProduct.isCustom) {
+                const stockInfo = document.querySelector(".Stock-number");
+                stockInfo.textContent = `${currentProduct.stock[currentProduct.sizes[0]]}`; 
+            }
+
+        }
 
         // Actualizar el precio dinámicamente al cambiar el tamaño
         sizeSelect.addEventListener("change", () => {
@@ -77,7 +106,6 @@ async function loadProductsData() {
         });
 
 
-
         //Cargar imágenes de la galería
         const galleryContainer = document.querySelector('.Product-img-gallery');
         galleryContainer.innerHTML = ''; // limpiar la galería ya existente
@@ -86,7 +114,7 @@ async function loadProductsData() {
             const img = document.createElement('img');
             img.src = imageSrc;
             img.alt = currentProduct.name;
-            img.addEventListener("click", function() {
+            img.addEventListener("click", function () {
                 productImg.src = imageSrc;
             });
             galleryContainer.appendChild(img);
@@ -96,8 +124,8 @@ async function loadProductsData() {
         loadRelatedProducts(products, currentProduct.id);
 
         // Si ocurreo un error, se muestra un mensaje de error en la consola
-    }   catch (error) {
-        console.error("Error al cargar los productos:",error);
+    } catch (error) {
+        console.error("Error al cargar los productos:", error);
         productTitle.textContent = "Producto no encontrado";
         productDescription.textContent = "El producto que buscas no existe";
         productPrice.textContent = "-";
@@ -117,7 +145,7 @@ function loadRelatedProducts(products, currentProductID) {
 
         const item = document.createElement("a"); // se crea un enlace para cada producto relacionado
         item.href = `./productos.html?id=${product.id}`; // se establece su enlace
-        item.classList.add("Related-item"); 
+        item.classList.add("Related-item");
 
         // se añade la información del producto relacionado
         item.innerHTML = `

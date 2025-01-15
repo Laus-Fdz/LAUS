@@ -84,21 +84,13 @@ function loadCart() {
             <div>
                 <h3>${product.name}</h3>
                 <p>${product.price}€</p>
-                <p>Cantidad: ${product.quantity}</p>
-
                 <br>
-                <div class="Cart-item-quantity">
-                    <button class="Cart-quantity fas fa-minus" data-id="${product.id}"></button> 
-                    <button class="Cart-quantity fas fa-plus" data-id="${product.id}"></button>
-                </div>
-
-                
                 <button class="Cart-remove fas fa-trash" data-id="${product.id}"></button>
             </div>
-        `; // Agregar imagen, nombre, precio, botones de cantidad y botón de eliminar
+        `; // Agregar imagen, nombre, precio y botón de eliminar
 
         cartItemsContainer.appendChild(item); // Agregar el producto al contenedor
-        total += product.price * product.quantity; // Calcular el precio total
+        total += product.price; // Calcular el precio total
     });
 
     cartTotalPrice.textContent = `${total.toFixed(2)}€`; // Mostrar el precio total
