@@ -21,7 +21,7 @@
 @font-face {
     font-family: 'MyCustomFontLight';
     src: url('../assets/font/Kalnia-Light.ttf') format('truetype');
-    font-weight: light;
+    font-weight: normal;
     font-style: normal;
 }
 

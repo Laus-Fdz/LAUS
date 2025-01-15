@@ -84,7 +84,6 @@
 
 .Cart-remove {
     cursor: pointer;
-    background-color: none;
     border: none;
     background: none;
     color: var(--color-primary);

@@ -155,7 +155,6 @@
 
 .Related-items img {
     width: 100%;
-    max-width: auto;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
