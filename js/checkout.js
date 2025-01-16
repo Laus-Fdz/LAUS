@@ -27,16 +27,17 @@ function loadCheckout() {
 
     // Mostrar los productos del carrito
     cart.forEach(product => {
+        const productQuantity = product.quantity || 1; 
         const item = document.createElement("div");
         item.classList.add("Checkout-item");
         item.innerHTML = `
             <div>
                 <h3>${product.name}</h3>
-                <p>${product.quantity} x ${product.price}€</p>
+                <p>${productQuantity} x ${product.price}€</p>
             </div>
         `;
         checkoutItemsContainer.appendChild(item);
-        total += product.price * product.quantity; // calcular total
+        total += Number(product.price) * (product.quantity || 1); // asegura de que el precio sea un número y hace el calculo
     });
 
     checkoutTotalPrice.textContent = `${total.toFixed(2)}€`; // mostrar el total
