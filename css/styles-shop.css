@@ -5,13 +5,12 @@
 .Tabs-buttons {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
 
 .Tabs-button {
     background-color: var(--color-primary);
     border: none;
-    border-radius: 8px 8px 0px 0px;
+    border-radius: 0px 0px 8px 8px;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
@@ -60,11 +59,6 @@
     object-fit: cover;
 }
 
-.Catalog-item img:hover {
-    transform: scale(1.05);
-    transition: transform 1s ease;
-}
-
 .Catalog-description {
     margin-top: 1rem;
 }
@@ -103,6 +97,8 @@
     
 }
 
+
+
 /* Tablet */
 @media (min-width: 768px) {
     .Catalog-grid {
@@ -135,5 +131,18 @@
     
     .Catalog-button {
         padding: 0.75rem 1.5rem;
+    }
+
+    /* Este hover me parece interesante en desktop pero no en móvil */
+    .Catalog-item img {
+        /* filtro para blanco y negro */
+        filter: grayscale(100%);
+        /* transición a color */
+        transition: all 0.5s ease;
+    }
+    
+    .Catalog-item img:hover {
+        /* Al pasar el ratón quitamos el filtro blanco y negro y se ve a color */
+        filter: grayscale(0);
     }
 }

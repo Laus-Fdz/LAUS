@@ -56,14 +56,17 @@ async function loadProductsData() {
             const sizeContainer = document.querySelector(".Product-sizes");
             sizeContainer.style.display = "none";
 
-            // Cambiar el botón
-            const addToCartButton = document.querySelector(".Product-button");
-            addToCartButton.textContent = "Contactar";
+            // Ocultar la información de stock
+            const stockContainer = document.querySelector(".Product-stock-info");
+            stockContainer.style.display = "none";
 
-            // agregamos un evento de click que redirije al formulario de contacto
-            addToCartButton.addEventListener("click", () => {
+            // Cambiar el botón a "Contactar" y redirigir a la página de contacto
+            const addCartToButton = document.querySelector(".Product-button");
+            addCartToButton.textContent = "Contactar";
+            addCartToButton.onclick = function() {
                 window.location.href = "./contacto.html";
-            });
+            };
+
         } else {
 
             // comportamiento normal para productos estándar

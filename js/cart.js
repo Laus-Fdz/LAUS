@@ -32,11 +32,14 @@ function getProductDetails() { // Obtener detalles del producto
     const productPrice = parseFloat(document.querySelector(".Product-price").textContent.replace("€", "")); // Obtener precio del producto
     const productImage = document.querySelector(".Product-img img").src; // Obtener imagen del producto
 
+    const isCustom = document.querySelector(".Product-custom-flag") !== null; // esta constante verifca si hay un producto personalizado en el DOM
+
     return { // Devolver objeto con los detalles del producto
         id: productID,
         name: productName,
         price: productPrice,
         image: productImage,
+        isCustom: true, // para productos personalizados
         quantity: 1, // Cantidad inicial
     };
 }
@@ -44,6 +47,10 @@ function getProductDetails() { // Obtener detalles del producto
 
 // Agregar producto al carrito
 function addToCart(product) {
+    if (product.isCustom) {  // si el producto es personalizado isCustom
+        return; // sal de la función (para que redirija a la página de contacto (esto lo he hecho en productos-page.js))
+    }
+
     let cart = JSON.parse(localStorage.getItem("cart")) || []; // Obtener productos del carrito o crear un array vacío
     const existingProduct = cart.find(item => item.id === product.id); // Buscar si el producto ya está en el carrito
 
