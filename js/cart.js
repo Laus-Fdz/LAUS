@@ -14,41 +14,49 @@ const checkoutButton = document.getElementById("proceedToCheckout");// Busca en 
 // -----------------------------------------------------------
 
 // EventListener para botón "Añadir al carrito"
-document.addEventListener("DOMContentLoaded", () => { // DOMContentLoaded: evento que se dispara cuando el documento HTML ha sido completamente cargado y parseado, PARA EVITAR QUE SE EJECUTE EL CÓDIGO ANTES DE QUE SE CARGUE EL DOM.
+document.addEventListener("DOMContentLoaded", () => { // DOMContentLoaded: evento que se usa PARA EVITAR QUE SE EJECUTE EL CÓDIGO ANTES DE QUE SE CARGUE EL DOM.
     const addToCartButton = document.querySelector(".Product-button"); // Botón "Añadir al carrito"
     if (addToCartButton) { // Si el botón existe    
         addToCartButton.addEventListener("click", () => { // Evento click
             const product = getProductDetails(); // Obtener detalles del producto
+
+            // si es un producto es personalizado PREVIENE (preventDefaul) la acción y redirige a la página de contacto!
+            if (product.isCustom) {
+                e.preventDefault();
+                window.location.href = "./contacto.html";
+                return; 
+            }
+
             addToCart(product); // Agregar producto al carrito
         });
     }
 });
 
 
-// Obtener detalles del producto actual
+// FUNCIÓN PARA OBTENER LOS DETALLES DEL PRODUCTO
 function getProductDetails() { // Obtener detalles del producto
     const productID = parseInt(new URLSearchParams(window.location.search).get("id")); // Obtener ID del producto   
     const productName = document.querySelector(".Product-title").textContent; // Obtener nombre del producto
     const productPrice = parseFloat(document.querySelector(".Product-price").textContent.replace("€", "")); // Obtener precio del producto
     const productImage = document.querySelector(".Product-img img").src; // Obtener imagen del producto
 
-    const isCustom = document.querySelector(".Product-custom-flag") !== null; // esta constante verifca si hay un producto personalizado en el DOM
-
+    const isCustom = document.querySelector(".Product-button").textContent === "Contactar"; // esta constante verifca si hay un producto personalizado en el DOM
+    
     return { // Devolver objeto con los detalles del producto
         id: productID,
         name: productName,
         price: productPrice,
         image: productImage,
-        isCustom: true, // para productos personalizados
-        quantity: 1, // Cantidad inicial
+        isCustom: isCustom, // para productos personalizados
     };
 }
 
 
-// Agregar producto al carrito
+// FUNCIÓN DE AGREGAR PRODUCTOS AL CARRITO
 function addToCart(product) {
+
     if (product.isCustom) {  // si el producto es personalizado isCustom
-        return; // sal de la función (para que redirija a la página de contacto (esto lo he hecho en productos-page.js))
+        return; // sal de la función (para que redirija a la página de contacto)
     }
 
     let cart = JSON.parse(localStorage.getItem("cart")) || []; // Obtener productos del carrito o crear un array vacío
@@ -66,10 +74,10 @@ function addToCart(product) {
 }
 
 
-// Cargar los productos del carrito
+// FUNCIÓN CARGAR LOS PRODUCTOS DEL CARRITO
 function loadCart() {
 
-    if(!cartItemsContainer || !cartTotalPrice) return;
+    if (!cartItemsContainer || !cartTotalPrice) return; // verifica que ambos elementos existan
 
     const cart = JSON.parse(localStorage.getItem("cart")) || []; // Obtener productos del carrito
     cartItemsContainer.innerHTML = ""; // Limpiar el contenedor
@@ -102,15 +110,6 @@ function loadCart() {
 
     cartTotalPrice.textContent = `${total.toFixed(2)}€`; // Mostrar el precio total
 
-    // Agregar evento de aumentar y disminuir cantidad de productos
-    document.querySelectorAll(".Cart-item-quantity").forEach(button => {
-        button.addEventListener("click", (event) => {
-            const productID = parseInt(event.target.getAttribute("data-id"));
-            const action = event.target.classList.contains("fa-plus") ? "increase" : "decrease";
-            updateQuantity(productID, action);
-        });
-    });
-
 
     // Agregar evento de eliminar producto
     document.querySelectorAll(".Cart-remove").forEach(button => {
@@ -123,30 +122,7 @@ function loadCart() {
 
 
 
-// Actualizar cantidad de productos
-function updateQuantity(productID, action) {
-    let cart = JSON.parse(localStorage.getItem("cart")) || []; // Obtener productos del carrito
-    const product = cart.find(item => item.id === productID); // Buscar el producto
-    const productIndex = cart.findIndex(item => item.id === productID); // Buscar el índice del producto
-
-    if (action === "increase") { // Si se aumenta la cantidad
-        product.quantity += 1; // Aumentar la cantidad
-    } else if (action === "decrease") { // Si se disminuye la cantidad
-        if (product.quantity > 1) { // Si la cantidad es mayor a 1
-            product.quantity -= 1; // Disminuir la cantidad
-        } else {
-            cart = cart.filter(item => item.id !== productID); // Filtrar el producto a eliminar
-        }
-    }
-
-    cart[productIndex] = product; // Actualizar el producto en el carrito
-    localStorage.setItem("cart", JSON.stringify(cart)); // Guardar el carrito en localStorage
-    loadCart(); // Recargar el carrito
-}
-
-
-
-// Eliminar producto del carrito
+// FUNCIÓN PARA ELIMINAR PRODUCTOS DEL CARRITO
 function removeFromCart(productID) {
     let cart = JSON.parse(localStorage.getItem("cart")) || []; // Obtener productos del carrito
     cart = cart.filter(product => product.id !== productID); // Filtrar el producto a eliminar
@@ -158,7 +134,7 @@ function removeFromCart(productID) {
 
 // Agregar evento al botón de comprar
 // Verifica si el botón existe
-if (checkoutButton) { 
+if (checkoutButton) {
     // Añade un evento de click
     checkoutButton.addEventListener("click", () => {
         // Obtiene el carrito del localStorage

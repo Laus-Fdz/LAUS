@@ -29,7 +29,7 @@ const sizeSelect = document.querySelector(".Product-size-select");
 // ----------------------------------------------------
 
 
-// Función para cargar los productos de JSON de forma asíncrona
+// FUNCIÓN PARA CARGAR PRODUCTOS DEL JSON DE FORMA ASÍNCRONA
 async function loadProductsData() {
     try {
         // Obtenemos los datos del JSON usando fetch y se convierte en un objeto de javascript
@@ -70,7 +70,7 @@ async function loadProductsData() {
         } else {
 
             // comportamiento normal para productos estándar
-            productDescription.textContent = `${currentProduct.name},${currentProduct.description}`;
+            productDescription.textContent = `${currentProduct.name} ${currentProduct.description}`;
             productPrice.textContent = `${currentProduct.price[currentProduct.sizes[0]]}€`;
 
             // Configurar las opciones de tamaño
@@ -94,20 +94,8 @@ async function loadProductsData() {
         sizeSelect.addEventListener("change", () => {
             const selectedSize = sizeSelect.value;
             const newPrice = currentProduct.price[selectedSize];
-            productPrice.textContent = `${newPrice}€`;
+            productPrice.textContent = newPrice !== undefined ? `${newPrice}€` : "No disponible"; // Comprobación para evitar errores si selectedSize no tiene precio
         });
-
-        // Comprobación para evitar errores si selectedSize no tiene precio
-        sizeSelect.addEventListener("change", () => {
-            const selectedSize = sizeSelect.value;
-            const newPrice = currentProduct.price[selectedSize];
-            if (newPrice !== undefined) {
-                productPrice.textContent = `${newPrice}€`;
-            } else {
-                productPrice.textContent = "No disponible";
-            }
-        });
-
 
         //Cargar imágenes de la galería
         const galleryContainer = document.querySelector('.Product-img-gallery');
@@ -135,7 +123,7 @@ async function loadProductsData() {
     }
 }
 
-// Función para cargar productos relacionados excluyendo el producto actual
+// FUNCIÓN PARA CARGAR LOS PRODUCTOS RELACIONADOS
 
 function loadRelatedProducts(products, currentProductID) {
     // Filtrar productos relacionados
