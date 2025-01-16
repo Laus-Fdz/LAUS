@@ -25,6 +25,19 @@
     line-height: 2rem;
 }
 
+.About-icon {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: var(--font-size-lg);
+
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.About-icon:hover {
+    transform: scale(1.2);
+}
+
 /* Imagen */
 
 .About-img img {
@@ -154,7 +167,7 @@
     }
 
     .About-img img {
-        width: 500px;
+        width: 450px;
         max-width: none;
         border-radius: 20px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
