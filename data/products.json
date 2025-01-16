@@ -2,7 +2,8 @@
     {
         "id": 1,
         "name": "The Girl in Grey",
-        "description": "Prints en impresión digital sobre papel mate de alta calidad de 300g. Tamaño A4 (21x29,7 cm) o o A3 (29,7x42cm). Cada impresión es firmada. SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
+        "description": "Prints en impresión digital sobre papel mate de alta calidad de 300g. Tamaño A4 (21x29,7 cm) o A3 (29,7x42cm).\nCada impresión es firmada. SIN MARCO.\nTodas las imágenes están protegidas por derechos de autor.",
+
         "price": {
         "A4": 20,
         "A3": 35
@@ -27,7 +28,7 @@
     {
         "id": 2,
         "name": "Behind Blue Eyes",
-        "description": "Prints en impresión digital sobre papel mate de alta calidad de 300g. Formato cuadrado, tamaño 15x15cm o 20x20cm. Cada impresión es firmada. SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
+        "description": "Prints en impresión digital sobre papel mate de alta calidad de 300g. Formato cuadrado, tamaño 15x15cm o 20x20cm.\nCada impresión es firmada. SIN MARCO.\nTodas las imágenes están protegidas por derechos de autor.",
         "price": {
             "15x15": 20,
             "20x20": 35
@@ -51,7 +52,7 @@
     {
         "id": 3,
         "name": "Billie Eilish",
-        "description": "Prints en impresión digital sobre papel mate de alta calidad de 300g. Tamaño A4 (21x29,7 cm) o o A3 (29,7x42cm). Cada impresión es firmada. SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
+        "description": "Prints en impresión digital sobre papel mate de alta calidad de 300g. Tamaño A4 (21x29,7 cm) o o A3 (29,7x42cm).\nCada impresión es firmada. SIN MARCO.\nTodas las imágenes están protegidas por derechos de autor.",
         "price": {
             "A4": 20,
             "A3": 35
@@ -75,7 +76,7 @@
     {
         "id": 4,
         "name": "Chris Martin",
-        "description": "Prints en impresión digital sobre papel mate de alta calidad de 300g. Tamaño A4 (21x29,7 cm) o A3 (29,7x42cm). Cada impresión es firmada. SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
+        "description": "Prints en impresión digital sobre papel mate de alta calidad de 300g. Tamaño A4 (21x29,7 cm) o A3 (29,7x42cm).\nCada impresión es firmada. SIN MARCO.\nTodas las imágenes están protegidas por derechos de autor.",
         "price": {
             "A4": 20,
             "A3": 35
@@ -99,7 +100,7 @@
     {
         "id": 5,
         "name": "Penguins love",
-        "description": "Prints en impresión digital sobre papel mate de alta calidad de 300g. Tamaño cuadrado (15x15cm)A4 (21x29,7 cm) o o A3 (29,7x42cm). Cada impresión es firmada. SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
+        "description": "Prints en impresión digital sobre papel mate de alta calidad de 300g. Tamaño cuadrado (15x15cm)A4 (21x29,7 cm) o o A3 (29,7x42cm).\nCada impresión es firmada. SIN MARCO.\nTodas las imágenes están protegidas por derechos de autor.",
         "price": {
             "15x15": 15,
             "A4": 20,
@@ -143,7 +144,7 @@
     {
         "id": 7,
         "name": "Jinx - Arcane",
-        "description": "Ilustración original realizada sobre papel de alta calidad de 300g. Tamaño A4 (21x29,7 cm). SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
+        "description": "Ilustración original realizada sobre papel de alta calidad de 300g. Tamaño A4 (21x29,7 cm).\nSIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
         "price": {
             "A4": 150
         },
@@ -164,7 +165,7 @@
     {
         "id": 8,
         "name": "Tomas Shelby",
-        "description": "Ilustración original realizada a tinta china y bolígrafo sobre papel de alta calidad de 300g. Tamaño A4 (21x29,7 cm). SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
+        "description": "Ilustración original realizada a tinta china y bolígrafo sobre papel de alta calidad de 300g. Tamaño A4 (21x29,7 cm).\nSIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
         "price": {
             "A4": 95
         },
@@ -185,7 +186,7 @@
     {
         "id": 9,
         "name": "The Fear",
-        "description": "Ilustración original realizada en acuarela sobre papel de alta calidad. Tamaño A5 (14,8x21 cm). SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
+        "description": "Ilustración original realizada en acuarela sobre papel de alta calidad. Tamaño A5 (14,8x21 cm).\nSIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
         "price": {
             "A5": 120
         },
@@ -206,7 +207,7 @@
     {
         "id": 10,
         "name": "Bloody Hand",
-        "description": "Ilustración original realizada en acuarela sobre papel de alta calidad. Tamaño A5 (14,8x21 cm). SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
+        "description": "Ilustración original realizada en acuarela sobre papel de alta calidad. Tamaño A5 (14,8x21 cm).\nSIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
         "price": {
             "A5": 110
         },
@@ -227,7 +228,7 @@
     {
         "id": 11,
         "name": "Jane's History",
-        "description": "Ilustración original realizada en tinta china y boli sobre papel de alta calidad. Tamaño A5 (14,8x21 cm). SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
+        "description": "Ilustración original realizada en tinta china y boli sobre papel de alta calidad. Tamaño A5 (14,8x21 cm).\nSIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
         "price": {
             "A5": 60
         },
@@ -248,7 +249,7 @@
     {
         "id": 12,
         "name": "Ellie The Last Of Us",
-        "description": "Ilustración original realizada en acuarela sobre papel de alta calidad. Tamaño A4 (21x29,7 cm). SIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
+        "description": "Ilustración original realizada en acuarela sobre papel de alta calidad. Tamaño A4 (21x29,7 cm).\nSIN MARCO. Todas las imágenes están protegidas por derechos de autor.",
         "price": {
             "A4": 75
         },

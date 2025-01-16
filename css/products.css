@@ -45,6 +45,11 @@
 
 /* Información del producto */
 
+.Product-text {
+    font-family: var(--font-regular);
+    font-size: var(--font-size-xs);
+}
+
 .Product-info{
     display: flex;
     flex-direction: column;
@@ -161,7 +166,7 @@
 }
 
 .Related-description {
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-sm);
     color: var(--color-text-dark);
     font-family: var(--font-regular);
 }
