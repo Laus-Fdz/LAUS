@@ -17,14 +17,14 @@ const checkoutButton = document.getElementById("proceedToCheckout");// Busca en 
 document.addEventListener("DOMContentLoaded", () => { // DOMContentLoaded: evento que se usa PARA EVITAR QUE SE EJECUTE EL CÓDIGO ANTES DE QUE SE CARGUE EL DOM.
     const addToCartButton = document.querySelector(".Product-button"); // Botón "Añadir al carrito"
     if (addToCartButton) { // Si el botón existe    
-        addToCartButton.addEventListener("click", () => { // Evento click
+        addToCartButton.addEventListener("click", (e) => { // Evento click , añadido el parámetro e
             const product = getProductDetails(); // Obtener detalles del producto
 
             // si es un producto es personalizado PREVIENE (preventDefaul) la acción y redirige a la página de contacto!
             if (product.isCustom) {
                 e.preventDefault();
                 window.location.href = "./contacto.html";
-                return; 
+                return;
             }
 
             addToCart(product); // Agregar producto al carrito
@@ -37,16 +37,24 @@ document.addEventListener("DOMContentLoaded", () => { // DOMContentLoaded: event
 function getProductDetails() { // Obtener detalles del producto
     const productID = parseInt(new URLSearchParams(window.location.search).get("id")); // Obtener ID del producto   
     const productName = document.querySelector(".Product-title").textContent; // Obtener nombre del producto
-    const productPrice = parseFloat(document.querySelector(".Product-price").textContent.replace("€", "")); // Obtener precio del producto
     const productImage = document.querySelector(".Product-img img").src; // Obtener imagen del producto
 
+    const productQuantity = parseInt(document.querySelector(".Product-quantity-select").value); // Obtener la cantidad
     const isCustom = document.querySelector(".Product-button").textContent === "Contactar"; // esta constante verifca si hay un producto personalizado en el DOM
-    
+
+    // Obtener el precio del JSON según el tamaño seleccionado
+    const products = JSON.parse(localStorage.getItem("products"));
+    const product = products.find(p => p.id === productID);
+    const productSize = document.querySelector(".Product-size-select").value;
+    const priceXSize = product.price[productSize];
+
     return { // Devolver objeto con los detalles del producto
         id: productID,
         name: productName,
-        price: productPrice,
+        price: priceXSize,
         image: productImage,
+        size: productSize,
+        quantity: productQuantity,
         isCustom: isCustom, // para productos personalizados
     };
 }
@@ -60,10 +68,12 @@ function addToCart(product) {
     }
 
     let cart = JSON.parse(localStorage.getItem("cart")) || []; // Obtener productos del carrito o crear un array vacío
-    const existingProduct = cart.find(item => item.id === product.id); // Buscar si el producto ya está en el carrito
+    const existingProduct = cart.find(item =>
+        item.id === product.id && item.size === product.size
+    ); // Buscar si el producto ya está en el carrito
 
     if (existingProduct) { // Si el producto ya está en el carrito
-        existingProduct.quantity += 1; // Aumentar la cantidad
+        existingProduct.quantity += product.quantity; // Aumentar la cantidad
     } else {
         cart.push(product); // Agregar el producto al carrito
     }
@@ -92,20 +102,28 @@ function loadCart() {
     }
 
     cart.forEach(product => { // Recorrer los productos del carrito
+        const subtotal = product.price * product.quantity;
         const item = document.createElement("div"); // Crear un div para cada producto
         item.classList.add("Cart-item"); // Agregar clase "Cart-item"
         item.innerHTML = ` 
             <img src="${product.image}" alt="${product.name}">
             <div>
                 <h3>${product.name}</h3>
+                <p>${product.size}</p>
+                <p>Cantidad: ${product.quantity}</p>
                 <p>${product.price}€</p>
+                <p>${subtotal.toFixed(2)}€</p>
+                
                 <br>
-                <button class="Cart-remove fas fa-trash" data-id="${product.id}"></button>
+                <button class="Cart-remove fas fa-trash" 
+                data-id="${product.id}"
+                data-size="${product.size}">
+                </button>
             </div>
         `; // Agregar imagen, nombre, precio y botón de eliminar
 
         cartItemsContainer.appendChild(item); // Agregar el producto al contenedor
-        total += product.price; // Calcular el precio total
+        total += subtotal; // Calcular el precio total
     });
 
     cartTotalPrice.textContent = `${total.toFixed(2)}€`; // Mostrar el precio total
@@ -115,7 +133,9 @@ function loadCart() {
     document.querySelectorAll(".Cart-remove").forEach(button => {
         button.addEventListener("click", (event) => {
             const productID = parseInt(event.target.getAttribute("data-id"));
-            removeFromCart(productID);
+            const productSize = event.target.getAttribute("data-size");
+
+            removeFromCart(productID, productSize);
         });
     });
 }
@@ -123,12 +143,19 @@ function loadCart() {
 
 
 // FUNCIÓN PARA ELIMINAR PRODUCTOS DEL CARRITO
-function removeFromCart(productID) {
-    let cart = JSON.parse(localStorage.getItem("cart")) || []; // Obtener productos del carrito
-    cart = cart.filter(product => product.id !== productID); // Filtrar el producto a eliminar
-    localStorage.setItem("cart", JSON.stringify(cart)); // Guardar el carrito en localStorage
-    alert("¿Seguro que quieres eliminar este producto del carrito?");
-    loadCart(); // Recargar el carrito
+function removeFromCart(productID, productSize) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    
+    // Confirmar antes de eliminar
+    if (confirm("¿Seguro que quieres eliminar este producto del carrito?")) { // confirm() devuelve un valor booleno, por eso no puedo poner alert()
+        cart = cart.filter(product => 
+            !(product.id === productID && product.size === productSize)
+        );
+        
+        // guardar el carrito actualizado
+        localStorage.setItem("cart", JSON.stringify(cart));
+        loadCart(); // Recarga el carrito
+    }
 }
 
 

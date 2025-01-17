@@ -33,7 +33,10 @@ function loadCheckout() {
         item.innerHTML = `
             <div>
                 <h3>${product.name}</h3>
-                <p>${productQuantity} x ${product.price}€</p>
+                <p>${product.size}</p>
+                <p>${product.quantity}</p>
+
+                <p>Total: ${(product.price * product.quantity).toFixed(2)}€</p>
             </div>
         `;
         checkoutItemsContainer.appendChild(item);

@@ -157,14 +157,14 @@
             "A4"
         ], 
         "stock": {
-            "A4": 0
+            "A4": 1
         },
         "isCustom": false, 
         "image": "./assets/img/originales/jinx-original.png",
         "category": "Originales",
         "gallery": [
             "./assets/img/originales/jinx-original.png",
-            "./assets/img/originales/jix-original2.png",
+            "./assets/img/originales/jinx-original2.png",
             "./assets/img/originales/jinx-original3.png"
         ]
     },

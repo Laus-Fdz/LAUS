@@ -34,10 +34,14 @@ async function loadProductsData() {
     try {
         // Obtenemos los datos del JSON usando fetch y se convierte en un objeto de javascript
         const response = await fetch(productsJSON);
+        console.log("Responde:", response);
         const products = await response.json();
+        console.log("Cargando productos:", products);
+        localStorage.setItem("products", JSON.stringify(products)); 
 
         // Econtrar el producto actual que conincida con el id de la URL
         const currentProduct = products.find(product => product.id === parseInt(productID));
+        console.log("Producto actual:", currentProduct);
         if (!currentProduct) {
             throw new Error('Producto no encontrado'); // si no se encuentra el producto, lanzar un error
         }
@@ -63,7 +67,7 @@ async function loadProductsData() {
             // Cambiar el botón a "Contactar" y redirigir a la página de contacto
             const addCartToButton = document.querySelector(".Product-button");
             addCartToButton.textContent = "Contactar";
-            addCartToButton.onclick = function() {
+            addCartToButton.onclick = function () {
                 window.location.href = "./contacto.html";
             };
 
@@ -84,8 +88,9 @@ async function loadProductsData() {
 
             // Excluir productos personalizados al mostrar el stock
             if (!currentProduct.isCustom) {
+                const selectedSize = currentProduct.sizes[0]; 
                 const stockInfo = document.querySelector(".Stock-number");
-                stockInfo.textContent = `${currentProduct.stock[currentProduct.sizes[0]]}`; 
+                stockInfo.textContent = `${currentProduct.stock[selectedSize]}`;
             }
 
         }
@@ -94,7 +99,7 @@ async function loadProductsData() {
         sizeSelect.addEventListener("change", () => {
             const selectedSize = sizeSelect.value;
             const newPrice = currentProduct.price[selectedSize];
-            productPrice.textContent = newPrice !== undefined ? `${newPrice}€` : "No disponible"; // Comprobación para evitar errores si selectedSize no tiene precio
+            productPrice.textContent = `${newPrice}€`;
         });
 
         //Cargar imágenes de la galería

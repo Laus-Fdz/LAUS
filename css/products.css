@@ -46,9 +46,9 @@
 
 /* Información del producto */
 
-.Product-text {
+.Product-text, .Product-stock-info {
     font-family: var(--font-regular);
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-sm);
 }
 
 .Product-info {
@@ -76,13 +76,13 @@
     color: var(--color-text-dark);
 }
 
-.Product-sizes label {
+.Product-sizes label, .Product-quantity label{
     font-size: var(--font-size-sm);
     color: var(--color-text-secondary);
     font-family: var(--font-regular);
 }
 
-.Product-size-select {
+.Product-size-select, .Product-quantity-select {
     padding: 0.3rem;
     font-size: var(--font-size-sm);
     font-family: var(--font-regular);
@@ -91,7 +91,8 @@
     cursor: pointer;
 }
 
-.Product-size-select:focus {
+
+.Product-size-select:focus, .Product-quantity-select:focus {
     border-color: var(--color-emphasis);
     outline: none;
 }
